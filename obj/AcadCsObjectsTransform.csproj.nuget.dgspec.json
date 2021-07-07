@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
+        "projectName": "AcadCsObjectsTransform",
+        "projectPath": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
+        "packagesPath": "C:\\Users\\baidak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\baidak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net47"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net47": {
+            "targetAlias": "net47",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net47": {
+          "targetAlias": "net47",
+          "dependencies": {
+            "DotSpatial.Projections": {
+              "target": "Package",
+              "version": "[2.0.0-rc1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

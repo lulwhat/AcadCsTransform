@@ -1,0 +1,10 @@
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csprojAssemblyReference.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.AssemblyInfoInputs.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.AssemblyInfo.cs
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.CoreCompileInputs.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\bin\Debug\net47\AcadCsObjectsTransform.dll
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\bin\Debug\net47\AcadCsObjectsTransform.pdb
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\bin\Debug\net47\DotSpatial.Projections.dll
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.CopyComplete
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.dll
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.pdb
