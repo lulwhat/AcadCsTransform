@@ -45,6 +45,9 @@ namespace AcadCsObjectsTransform
                 return;
             }
 
+            
+            /*
+
             // ск-42 зона 10
             string projstring_initial = 
                 "+proj=tmerc +lat_0=0 +lon_0=57 +k=1 +x_0=10500000 +y_0=0 +ellps=krass +towgs84=23.57,-140.95,-79.8,0,0.35,0.79,-0.22 +units=m +no_defs +axis=neu  +col_0=\"X\" +col_1=\"Y\" +col_2=\"H\"";
@@ -67,11 +70,14 @@ namespace AcadCsObjectsTransform
 
             DotSpatial.Projections.Reproject.ReprojectPoints(xy, z, crs_initial, crs_target, 0, xy.Length / 2);
 
+            */
+
+            List<Point2d> polpts = new List<Point2d>();
             int count = 0;
             var tr = doc.TransactionManager.StartTransaction();
             using (tr)
             {
-                List<Point2d> pts = new List<Point2d>();
+                
                 foreach (SelectedObject so in psr.Value)
                 {
                     Entity ent =
@@ -86,23 +92,23 @@ namespace AcadCsObjectsTransform
                     if (pl != null)
                     {
                         // Collect vertices
-                        pts = new List<Point2d>();
+                        polpts = new List<Point2d>();
                         for (int i = 0; i < pl.NumberOfVertices; i++)
                         {
-                            pts.Add(pl.GetPoint2dAt(i));
+                            polpts.Add(pl.GetPoint2dAt(i));
                             pl.GetArcSegment2dAt(i);
                         }
                 
                         // Open Polyline for edit
                         pl.UpgradeOpen();
-                
-                        // Write rounded coordinates back to Polyline
+                        // Write coordinates back to Polyline
                         for (int i = 0; i < pl.NumberOfVertices; i++)
                         {
-                            pl.SetPointAt(i, new Point2d(pts[i].X + 10, pts[i].Y + 10));
+                            pl.SetPointAt(i, new Point2d(polpts[i].X + 10, polpts[i].Y + 10));
                         }
                     }
 
+                    /*
                     // Polyline3d
                     Polyline3d pl3d = (Polyline3d)ent;
                     if (pl3d != null)
@@ -125,26 +131,82 @@ namespace AcadCsObjectsTransform
                         }
                     }
 
-                    // Hatch
+                    // Line
+                    Line ln = (Line)ent;
+                    if (ln != null)
+                    {
+                        ObjectId lnid = ln.Id;
+                        ln = (Line)tr.GetObject(lnid, OpenMode.ForWrite);
+                        ln.StartPoint = new Point3d(ln.StartPoint.X + 10, ln.StartPoint.Y + 10, ln.StartPoint.Z);
+                        ln.EndPoint = new Point3d(ln.EndPoint.X + 10, ln.EndPoint.Y + 10, ln.EndPoint.Z);
+                    }
+
+
+                    // Hatch - will get back later
                     Hatch ht = (Hatch)ent;
                     if (ht != null)
                     {
-                        Vector3d v3 = new Vector3d(1,1,1);
+                        // Vector3d v3 = new Vector3d(1,1,1);
                         // v3.
                         // ht.GetStretchPoints();
                         // ht.set
                         // ht.AppendLoop(HatchLoopTypes.External, );
                     }
 
+                    // Point
+                    DBPoint pt = (DBPoint)ent;
+                    
+                    if (pt != null)
+                    {
+                        ObjectId ptid = pt.Id;
+                        pt = (DBPoint)tr.GetObject(ptid, OpenMode.ForWrite);
+                        pt = new DBPoint(new Point3d(pt.Position.X + 10, pt.Position.Y + 10, pt.Position.Z));
+                    }
 
-                    // Autodesk.AutoCAD.DatabaseServices.Hatch;
-                    // Autodesk.AutoCAD.DatabaseServices.Polyline3d;
-                    // Autodesk.AutoCAD.DatabaseServices.MText;
-                    // Autodesk.AutoCAD.DatabaseServices.DBText;
-                    // Autodesk.AutoCAD.DatabaseServices.Line;
-                    // Autodesk.AutoCAD.DatabaseServices.BlockReference;
-                    // Autodesk.AutoCAD.DatabaseServices.DBPoint;
+                    // Block
+                    BlockReference bl = (BlockReference)ent;
+                    if (bl != null)
+                    {
+                        ObjectId blid = bl.Id;
+                        bl = (BlockReference)tr.GetObject(blid, OpenMode.ForWrite);
+                        bl.Position = new Point3d(bl.Position.X + 10, bl.Position.Y + 10, bl.Position.Z);
+                    }
+
+                    // DBText
+                    DBText txt = (DBText)ent;
+                    if (txt != null)
+                    {
+                        ObjectId txtid = txt.Id;
+                        txt = (DBText)tr.GetObject(txtid, OpenMode.ForWrite);
+                        txt.Position = new Point3d(txt.Position.X + 10, txt.Position.Y + 10, txt.Position.Z);
+                    }
+
+                    // MText
+                    MText mtxt = (MText)ent;
+                    if (mtxt != null)
+                    {
+                        ObjectId mtxtid = mtxt.Id;
+                        mtxt = (MText)tr.GetObject(mtxtid, OpenMode.ForWrite);
+                        mtxt.Location = new Point3d(mtxt.Location.X + 10, mtxt.Location.Y + 10, mtxt.Location.Z);
+                    }
+
+                    //
+
+
+                    */
+
+
                     // Autodesk.AutoCAD.DatabaseServices.Polyline;
+                    // Autodesk.AutoCAD.DatabaseServices.Polyline3d;
+                    // Autodesk.AutoCAD.DatabaseServices.Polyline2d;
+                    // Autodesk.AutoCAD.DatabaseServices.Line;
+                    // Autodesk.AutoCAD.DatabaseServices.Hatch;
+                    // Autodesk.AutoCAD.DatabaseServices.DBPoint;
+                    // Autodesk.AutoCAD.DatabaseServices.BlockReference;
+                    // Autodesk.AutoCAD.DatabaseServices.DBText;
+                    // Autodesk.AutoCAD.DatabaseServices.MText;
+                    
+
 
                     count ++;
                 }
