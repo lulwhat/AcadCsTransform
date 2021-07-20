@@ -9,7 +9,7 @@ AC1024
   9
 $ACADMAINTVER
  70
-   225
+   226
   9
 $DWGCODEPAGE
   3
@@ -17,7 +17,7 @@ ANSI_1251
   9
 $LASTSAVEDBY
   1
-lulwh
+baidak
   9
 $INSBASE
  10
@@ -31,15 +31,15 @@ $EXTMIN
  10
 172.4653044788834
  20
--70.26966275193763
+113.8663253597037
  30
 0.0
   9
 $EXTMAX
  10
-677.4468420906941
+493.0388646749219
  20
-240.2511854466085
+284.0774807420369
  30
 0.0
   9
@@ -497,19 +497,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459408.606562500
+2459403.704710648
   9
 $TDUUPDATE
  40
-2459408.398229167
+2459403.496377315
   9
 $TDINDWG
  40
-0.2275347222
+0.2254050926
   9
 $TDUSRTIMER
  40
-0.2275347222
+0.2254050926
   9
 $USRTIMER
  70
@@ -549,7 +549,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-1A66
+1A1D
   9
 $SURFTAB1
  70
@@ -933,7 +933,7 @@ $FINGERPRINTGUID
   9
 $VERSIONGUID
   2
-{B9DBE6F8-92F3-8247-B2CB-C1F0AA0055D0}
+{7CE8F574-309F-884C-9B00-2BC6CB20D287}
   9
 $EXTNAMES
 290
@@ -1275,7 +1275,7 @@ AcMapSharedComponents
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -1291,7 +1291,7 @@ AcMapFeatureSourceManager
  90
      1025
  91
-        0
+        1
 280
      0
 281
@@ -1307,7 +1307,7 @@ AeccvBase130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
       129
  91
-        0
+        4
 280
      0
 281
@@ -1323,7 +1323,7 @@ AeccvBase130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1339,7 +1339,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1355,7 +1355,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+      185
 280
      0
 281
@@ -1371,7 +1371,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+      185
 280
      0
 281
@@ -1387,7 +1387,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1403,7 +1403,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1419,7 +1419,7 @@ ObjectDBX Classes
  90
      1153
  91
-        0
+        1
 280
      0
 281
@@ -1435,7 +1435,7 @@ AeccHydrology130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1451,7 +1451,7 @@ AeccHydrology130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1467,7 +1467,7 @@ AeccHydrology130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -1483,7 +1483,7 @@ AeccHydrology130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -1499,7 +1499,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1515,7 +1515,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1531,7 +1531,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -1547,7 +1547,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -1563,7 +1563,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1579,7 +1579,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1595,7 +1595,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1611,7 +1611,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1627,7 +1627,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1643,7 +1643,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1659,7 +1659,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1675,7 +1675,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1691,7 +1691,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1707,7 +1707,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1723,7 +1723,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1739,7 +1739,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1755,7 +1755,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1771,7 +1771,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1787,7 +1787,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1803,7 +1803,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1819,7 +1819,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1835,7 +1835,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1851,7 +1851,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1867,7 +1867,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1883,7 +1883,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1899,7 +1899,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1915,7 +1915,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1931,7 +1931,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1947,7 +1947,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1963,7 +1963,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1979,7 +1979,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -1995,7 +1995,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2011,7 +2011,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2027,7 +2027,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2043,7 +2043,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2059,7 +2059,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2075,7 +2075,7 @@ AeccParamPart130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2091,7 +2091,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2107,7 +2107,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2123,7 +2123,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        7
 280
      0
 281
@@ -2139,7 +2139,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2155,7 +2155,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2171,7 +2171,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2187,7 +2187,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2203,7 +2203,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2219,7 +2219,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2235,7 +2235,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2251,7 +2251,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2267,7 +2267,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2283,7 +2283,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+       12
 280
      0
 281
@@ -2299,7 +2299,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2315,7 +2315,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2331,7 +2331,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2347,7 +2347,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -2363,7 +2363,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2379,7 +2379,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2395,7 +2395,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2411,7 +2411,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+       11
 280
      0
 281
@@ -2427,7 +2427,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2443,7 +2443,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -2459,7 +2459,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2475,7 +2475,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2491,7 +2491,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2507,7 +2507,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2523,7 +2523,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2539,7 +2539,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2555,7 +2555,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2571,7 +2571,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2587,7 +2587,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2603,7 +2603,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2619,7 +2619,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2635,7 +2635,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2651,7 +2651,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2667,7 +2667,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2683,7 +2683,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2699,7 +2699,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -2715,7 +2715,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2731,7 +2731,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2747,7 +2747,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -2763,7 +2763,7 @@ AecBaseEx80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2779,7 +2779,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       893
  91
-        0
+        1
 280
      0
 281
@@ -2795,7 +2795,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2811,7 +2811,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2827,7 +2827,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2843,7 +2843,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2859,7 +2859,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2875,7 +2875,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2891,7 +2891,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2907,7 +2907,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        9
 280
      0
 281
@@ -2923,7 +2923,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2939,7 +2939,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2955,7 +2955,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -2971,7 +2971,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        5
 280
      0
 281
@@ -2987,7 +2987,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3003,7 +3003,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3019,7 +3019,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3035,7 +3035,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3051,7 +3051,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3067,7 +3067,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -3083,7 +3083,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3099,7 +3099,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        4
 280
      0
 281
@@ -3115,7 +3115,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3131,7 +3131,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3147,7 +3147,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3163,7 +3163,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -3179,7 +3179,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3195,7 +3195,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3211,7 +3211,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -3227,7 +3227,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3243,7 +3243,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        4
 280
      0
 281
@@ -3259,7 +3259,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3275,7 +3275,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3291,7 +3291,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3307,7 +3307,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3323,7 +3323,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3339,7 +3339,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3355,7 +3355,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3371,7 +3371,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3387,7 +3387,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3403,7 +3403,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3419,7 +3419,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3435,7 +3435,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3451,7 +3451,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3467,7 +3467,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3483,7 +3483,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3499,7 +3499,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3515,7 +3515,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3531,7 +3531,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3547,7 +3547,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3563,7 +3563,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3579,7 +3579,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3595,7 +3595,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3611,7 +3611,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3627,7 +3627,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3643,7 +3643,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3659,7 +3659,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3675,7 +3675,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3691,7 +3691,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3707,7 +3707,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3723,7 +3723,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3739,7 +3739,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3755,7 +3755,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -3771,7 +3771,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3787,7 +3787,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3803,7 +3803,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3819,7 +3819,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        4
 280
      0
 281
@@ -3835,7 +3835,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3851,7 +3851,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -3867,7 +3867,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3883,7 +3883,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3899,7 +3899,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3915,7 +3915,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3931,7 +3931,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3947,7 +3947,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3963,7 +3963,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3979,7 +3979,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -3995,7 +3995,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4011,7 +4011,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4027,7 +4027,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4043,7 +4043,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4059,7 +4059,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4075,7 +4075,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4091,7 +4091,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -4107,7 +4107,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4123,7 +4123,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4139,7 +4139,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -4155,7 +4155,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4171,7 +4171,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -4187,7 +4187,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4203,7 +4203,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4219,7 +4219,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4235,7 +4235,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4251,7 +4251,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4267,7 +4267,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4283,7 +4283,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4299,7 +4299,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4315,7 +4315,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -4331,7 +4331,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4347,7 +4347,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4363,7 +4363,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4379,7 +4379,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4395,7 +4395,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4411,7 +4411,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4427,7 +4427,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4443,7 +4443,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4459,7 +4459,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4475,7 +4475,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4491,7 +4491,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4507,7 +4507,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4523,7 +4523,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4539,7 +4539,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4555,7 +4555,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4571,7 +4571,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4587,7 +4587,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4603,7 +4603,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4619,7 +4619,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4635,7 +4635,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4651,7 +4651,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4667,7 +4667,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4683,7 +4683,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4699,7 +4699,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4715,7 +4715,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4731,7 +4731,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4747,7 +4747,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4763,7 +4763,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4779,7 +4779,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4795,7 +4795,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -4811,7 +4811,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4827,7 +4827,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4843,7 +4843,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4859,7 +4859,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4875,7 +4875,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4891,7 +4891,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4907,7 +4907,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4923,7 +4923,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4939,7 +4939,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4955,7 +4955,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4971,7 +4971,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -4987,7 +4987,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5003,7 +5003,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        4
 280
      0
 281
@@ -5019,7 +5019,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5035,7 +5035,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5051,7 +5051,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5067,7 +5067,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5083,7 +5083,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5099,7 +5099,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5115,7 +5115,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5131,7 +5131,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5147,7 +5147,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5163,7 +5163,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5179,7 +5179,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5195,7 +5195,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5211,7 +5211,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5227,7 +5227,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5243,7 +5243,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5259,7 +5259,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5275,7 +5275,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5291,7 +5291,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5307,7 +5307,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -5323,7 +5323,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5339,7 +5339,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -5355,7 +5355,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5371,7 +5371,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5387,7 +5387,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5403,7 +5403,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -5419,7 +5419,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5435,7 +5435,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5451,7 +5451,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5467,7 +5467,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5483,7 +5483,7 @@ AecArchBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5499,7 +5499,7 @@ AecSchedule80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5515,7 +5515,7 @@ AecSchedule80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autode
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5531,7 +5531,7 @@ AeccBuildingSite130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB
  90
       893
  91
-        0
+        1
 280
      0
 281
@@ -5547,7 +5547,7 @@ AeccBuildingSite130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB
  90
       893
  91
-        0
+        1
 280
      0
 281
@@ -5563,7 +5563,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5579,7 +5579,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5595,7 +5595,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5611,7 +5611,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5627,7 +5627,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5643,7 +5643,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5659,7 +5659,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5675,7 +5675,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5691,7 +5691,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5707,7 +5707,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5723,7 +5723,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5739,7 +5739,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5755,7 +5755,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5771,7 +5771,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5787,7 +5787,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5803,7 +5803,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5819,7 +5819,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5835,7 +5835,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5851,7 +5851,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5867,7 +5867,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5883,7 +5883,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5899,7 +5899,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5915,7 +5915,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5931,7 +5931,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5947,7 +5947,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5963,7 +5963,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -5979,7 +5979,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -5995,7 +5995,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -6011,7 +6011,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -6027,7 +6027,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6043,7 +6043,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -6059,7 +6059,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6075,7 +6075,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6091,7 +6091,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6107,7 +6107,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6123,7 +6123,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6139,7 +6139,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6155,7 +6155,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6171,7 +6171,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6187,7 +6187,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6203,7 +6203,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6219,7 +6219,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6235,7 +6235,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6251,7 +6251,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6267,7 +6267,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6283,7 +6283,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6299,7 +6299,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6315,7 +6315,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6331,7 +6331,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6347,7 +6347,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6363,7 +6363,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6379,7 +6379,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6395,7 +6395,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6411,7 +6411,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6427,7 +6427,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6443,7 +6443,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6459,7 +6459,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6475,7 +6475,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6491,7 +6491,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6507,7 +6507,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6523,7 +6523,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6539,7 +6539,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6555,7 +6555,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6571,7 +6571,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6587,7 +6587,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6603,7 +6603,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6619,7 +6619,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6635,7 +6635,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6651,7 +6651,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6667,7 +6667,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6683,7 +6683,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6699,7 +6699,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6715,7 +6715,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6731,7 +6731,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6747,7 +6747,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6763,7 +6763,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6779,7 +6779,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6795,7 +6795,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6811,7 +6811,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6827,7 +6827,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6843,7 +6843,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6859,7 +6859,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6875,7 +6875,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6891,7 +6891,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6907,7 +6907,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6923,7 +6923,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6939,7 +6939,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6955,7 +6955,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6971,7 +6971,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -6987,7 +6987,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7003,7 +7003,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7019,7 +7019,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7035,7 +7035,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7051,7 +7051,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7067,7 +7067,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7083,7 +7083,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7099,7 +7099,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7115,7 +7115,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7131,7 +7131,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7147,7 +7147,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7163,7 +7163,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7179,7 +7179,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7195,7 +7195,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7211,7 +7211,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7227,7 +7227,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7243,7 +7243,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7259,7 +7259,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7275,7 +7275,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7291,7 +7291,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7307,7 +7307,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7323,7 +7323,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7339,7 +7339,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7355,7 +7355,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7371,7 +7371,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7387,7 +7387,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7403,7 +7403,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7419,7 +7419,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7435,7 +7435,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7451,7 +7451,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7467,7 +7467,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7483,7 +7483,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7499,7 +7499,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7515,7 +7515,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7531,7 +7531,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7547,7 +7547,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7563,7 +7563,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7579,7 +7579,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7595,7 +7595,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7611,7 +7611,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7627,7 +7627,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7643,7 +7643,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7659,7 +7659,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7675,7 +7675,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7691,7 +7691,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7707,7 +7707,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7723,7 +7723,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7739,7 +7739,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7755,7 +7755,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7771,7 +7771,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7787,7 +7787,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7803,7 +7803,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7819,7 +7819,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -7835,7 +7835,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7851,7 +7851,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7867,7 +7867,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7883,7 +7883,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7899,7 +7899,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7915,7 +7915,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7931,7 +7931,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7947,7 +7947,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7963,7 +7963,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -7979,7 +7979,7 @@ AecCivilBase|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -7995,7 +7995,7 @@ AecCivilBase|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
      1025
  91
-        0
+        1
 280
      0
 281
@@ -8011,7 +8011,7 @@ AecCivilBase|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
      1025
  91
-        0
+        1
 280
      0
 281
@@ -8027,7 +8027,7 @@ AecCivilBase|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
      1024
  91
-        0
+        1
 280
      0
 281
@@ -8043,7 +8043,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8059,7 +8059,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8075,7 +8075,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8091,7 +8091,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8107,7 +8107,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8123,7 +8123,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8139,7 +8139,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
         0
  91
-        0
+        1
 280
      0
 281
@@ -8155,7 +8155,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        8
 280
      0
 281
@@ -8171,7 +8171,7 @@ AecBase80|Product Desc: Autodesk Architectural Desktop 2007 |Company: Autodesk,I
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -8187,7 +8187,7 @@ AeccvBase130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addres
  90
       129
  91
-        0
+     1153
 280
      0
 281
@@ -8203,7 +8203,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+       14
 280
      0
 281
@@ -8219,7 +8219,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8235,7 +8235,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8251,7 +8251,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -8267,7 +8267,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
      1916
  91
-        0
+        2
 280
      0
 281
@@ -8283,7 +8283,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -8299,7 +8299,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+      274
 280
      0
 281
@@ -8315,7 +8315,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+      181
 280
      0
 281
@@ -8331,7 +8331,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+       22
 280
      0
 281
@@ -8347,7 +8347,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -8363,7 +8363,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        5
 280
      0
 281
@@ -8379,7 +8379,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8395,7 +8395,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8411,7 +8411,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
      3071
  91
-        0
+        1
 280
      0
 281
@@ -8603,7 +8603,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8619,7 +8619,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8635,7 +8635,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8651,7 +8651,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8667,7 +8667,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8683,7 +8683,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8699,7 +8699,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8715,7 +8715,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8731,7 +8731,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8747,7 +8747,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8763,7 +8763,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8779,7 +8779,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8795,7 +8795,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8811,7 +8811,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -8827,7 +8827,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8843,7 +8843,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8859,7 +8859,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        3
 280
      0
 281
@@ -8875,7 +8875,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8891,7 +8891,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
      3071
  91
-        0
+        2
 280
      0
 281
@@ -8907,7 +8907,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8923,7 +8923,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8939,7 +8939,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8955,7 +8955,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8971,7 +8971,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -8987,7 +8987,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9003,7 +9003,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
      3071
  91
-        0
+        2
 280
      0
 281
@@ -9019,7 +9019,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9035,7 +9035,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9051,7 +9051,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9067,7 +9067,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9083,7 +9083,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9099,7 +9099,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+       14
 280
      0
 281
@@ -9115,7 +9115,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+       36
 280
      0
 281
@@ -9131,7 +9131,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9147,7 +9147,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9163,7 +9163,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9179,7 +9179,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9195,7 +9195,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+       18
 280
      0
 281
@@ -9211,7 +9211,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9227,7 +9227,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9243,7 +9243,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9259,7 +9259,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9275,7 +9275,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9291,7 +9291,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9307,7 +9307,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9323,7 +9323,7 @@ AeccRoadway130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9339,7 +9339,7 @@ AeccLand130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Address
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9355,7 +9355,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9371,7 +9371,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9387,7 +9387,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9403,7 +9403,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9419,7 +9419,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+       13
 280
      0
 281
@@ -9435,7 +9435,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9451,7 +9451,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9467,7 +9467,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        1
 280
      0
 281
@@ -9483,7 +9483,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+       33
 280
      0
 281
@@ -9499,7 +9499,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9515,7 +9515,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+       33
 280
      0
 281
@@ -9531,7 +9531,7 @@ AeccNetwork130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addr
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9547,7 +9547,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9563,7 +9563,7 @@ AeccPressurePipes130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9579,7 +9579,7 @@ LAN_AECCPRESSUEPIPES|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9595,7 +9595,7 @@ LAN_AECCPRESSUEPIPES|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WE
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9611,7 +9611,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9627,7 +9627,7 @@ AeccSurvey130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Addre
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9643,7 +9643,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9659,7 +9659,7 @@ AeccPlanProd130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Add
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9675,7 +9675,7 @@ AeccHydrology130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB Ad
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9691,7 +9691,7 @@ AeccBuildingSite130|Product Desc: Autodesk Civil 3D |Company: Autodesk,Inc. |WEB
  90
       129
  91
-        0
+        2
 280
      0
 281
@@ -9707,7 +9707,7 @@ ObjectDBX Classes
  90
      1152
  91
-        4
+       12
 280
      0
 281
@@ -9753,9 +9753,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-225.0178482677941
+322.7975310167482
  22
-67.6937366771491
+162.9725912695552
  13
 0.0
  23
@@ -9781,9 +9781,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-478.9333902409114
+309.9409683715352
  41
-2.044871794871794
+1.905683192261184
  42
 50.0
  43
@@ -9871,7 +9871,7 @@ LTYPE
 100
 AcDbSymbolTable
  70
-     2
+     3
   0
 LTYPE
   5
@@ -10437,7 +10437,7 @@ VIEW
 100
 AcDbSymbolTable
  70
-     0
+     4
   0
 ENDTAB
   0
@@ -12341,7 +12341,7 @@ AcDbCircle
  30
 0.0
  40
-1.946210896597375
+1.946210896597376
   0
 LWPOLYLINE
   5
@@ -12365,7 +12365,7 @@ AcDbPolyline
  20
 0.0
  10
-5.313354328602712
+5.313354328602713
  20
 3.310067291325935
   0
@@ -12889,48 +12889,6 @@ ACAD
 1030
 0.0
   0
-LWPOLYLINE
-  5
-1A29
-330
-70
-100
-AcDbEntity
-  8
-0
-100
-AcDbPolyline
- 90
-        5
- 70
-     0
- 43
-0.0
- 10
-279.6311339281174
- 20
-102.6444646511493
- 10
-355.7215575995779
- 20
-127.7844612477479
- 42
--0.4277577529595387
- 10
-448.9936908166765
- 20
-78.11763709738215
- 42
-0.5794003341998606
- 10
-667.4468420906942
- 20
-22.93227910522046
- 10
-217.0406270578387
- 20
--70.26966275193763
-  0
 ENDSEC
   0
 SECTION
@@ -13005,11 +12963,15 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-1A2F
+19DE
   3
 AcDbVariableDictionary
 350
 78
+  3
+AcDsDecomposeData
+350
+19E4
   3
 ADE_QUERY_LIBRARY
 350
@@ -13051,17 +13013,9 @@ Autodesk_MAP
 350
 7F
   3
-ESRI_DOMAINS
+Root
 350
-1A2A
-  3
-ESRI_FEATURES
-350
-1A2B
-  3
-ESRI_WEBFEATURELAYERS
-350
-1A2C
+D75
   3
 {24DE2741-47F6-4298-B91B-737E814BAE3E}
 350
@@ -13279,11 +13233,11 @@ AcDbXrecord
 280
      1
 300
-ACD
+CIV3D
 300
-2017
+2020
 300
-ACD_F_S
+
   0
 DICTIONARY
   5
@@ -13747,7 +13701,7 @@ X-Ray
   0
 XRECORD
   5
-1A2F
+19DE
 102
 {ACAD_REACTORS
 330
@@ -13823,6 +13777,34 @@ HPTRANSPARENCY
   0
 DICTIONARY
   5
+19E4
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+AcDsRecords
+350
+19E6
+  3
+AcDsSchemas
+350
+19E5
+1001
+ACAD
+1070
+     2
+  0
+DICTIONARY
+  5
 CD8
 102
 {ACAD_REACTORS
@@ -13856,6 +13838,10 @@ C
 AcDbDictionary
 281
      1
+  3
+Standard
+350
+F77
   0
 DICTIONARY
   5
@@ -13872,6 +13858,38 @@ C
 AcDbDictionary
 281
      1
+  3
+Model High Detail
+350
+F76
+  3
+Model Low Detail
+350
+F75
+  3
+Модель
+350
+F6F
+  3
+Отраженный
+350
+F71
+  3
+План
+350
+F70
+  3
+План без подробностей
+350
+F73
+  3
+План с подробностями
+350
+F74
+  3
+Уровень
+350
+F72
   0
 DICTIONARY
   5
@@ -13888,6 +13906,1422 @@ C
 AcDbDictionary
 281
      1
+  3
+AeccDbDispRepAppurtenance
+350
+F4A
+  3
+AeccDbDispRepAppurtenanceCSV
+350
+F4B
+  3
+AeccDbDispRepAutoCorridorFeatureLine
+350
+F0B
+  3
+AeccDbDispRepAutoCorridorFeatureLineProfile
+350
+F0C
+  3
+AeccDbDispRepAutoCorridorFeatureLineSection
+350
+F0D
+  3
+AeccDbDispRepAutoFeatureLine
+350
+DC3
+  3
+AeccDbDispRepAutoFeatureLineCSV
+350
+DC6
+  3
+AeccDbDispRepAutoFeatureLineProfile
+350
+DC4
+  3
+AeccDbDispRepAutoFeatureLineSection
+350
+DC0
+  3
+AeccDbDispRepBSUtilConnector
+350
+E32
+  3
+AeccDbDispRepBuildingSite
+350
+E33
+  3
+AeccDbDispRepCantDiagram
+350
+DC1
+  3
+AeccDbDispRepCatchmentArea
+350
+F68
+  3
+AeccDbDispRepCSVStationSlider
+350
+F0A
+  3
+AeccDbDispRepFeatureLine
+350
+DC2
+  3
+AeccDbDispRepFeatureLineCSV
+350
+DC7
+  3
+AeccDbDispRepFeatureLineProfile
+350
+DCF
+  3
+AeccDbDispRepFeatureLineSection
+350
+DCB
+  3
+AeccDbDispRepFitting
+350
+F4C
+  3
+AeccDbDispRepFittingCSV
+350
+F52
+  3
+AeccDbDispRepGrading
+350
+DCD
+  3
+AeccDbDispRepGraph
+350
+DCA
+  3
+AeccDbDispRepGraphCrossSection
+350
+DC8
+  3
+AeccDbDispRepGraphMassHaulView
+350
+DC9
+  3
+AeccDbDispRepGraphProfile
+350
+DCC
+  3
+AeccDbDispRepGraphProfileNetworkPart
+350
+F38
+  3
+AeccDbDispRepGraphProfilePressurePart
+350
+F4F
+  3
+AeccDbDispRepHydroRegion
+350
+F65
+  3
+AeccDbDispRepInterference
+350
+F3A
+  3
+AeccDbDispRepInterferenceCheck
+350
+F3C
+  3
+AeccDbDispRepInterferenceCSV
+350
+F3E
+  3
+AeccDbDispRepIntersection
+350
+F09
+  3
+AeccDbDispRepMassHaulLine
+350
+DCE
+  3
+AeccDbDispRepMatchLine
+350
+F6E
+  3
+AeccDbDispRepMaterialSection
+350
+DD0
+  3
+AeccDbDispRepNetwork
+350
+F3F
+  3
+AeccDbDispRepPipe
+350
+F3B
+  3
+AeccDbDispRepPipeCSV
+350
+F3D
+  3
+AeccDbDispRepPressurePipe
+350
+F50
+  3
+AeccDbDispRepPressurePipeCSV
+350
+F4D
+  3
+AeccDbDispRepPressurePipeNetwork
+350
+F51
+  3
+AeccDbDispRepProfileCrossing
+350
+DD1
+  3
+AeccDbDispRepProfileProjection
+350
+DDA
+  3
+AeccDbDispRepQuantityTakeoffAggregateTable
+350
+DD6
+  3
+AeccDbDispRepRehabWarningMarker
+350
+F10
+  3
+AeccDbDispRepSampleLine
+350
+DD7
+  3
+AeccDbDispRepSampleLineGroup
+350
+DD4
+  3
+AeccDbDispRepSection
+350
+DD3
+  3
+AeccDbDispRepSectionCorridor
+350
+F11
+  3
+AeccDbDispRepSectionPipeNetwork
+350
+F36
+  3
+AeccDbDispRepSectionPressurePipeNetwork
+350
+F4E
+  3
+AeccDbDispRepSectionProjection
+350
+DD8
+  3
+AeccDbDispRepSectionViewQuantityTakeoffTable
+350
+DDB
+  3
+AeccDbDispRepSheet
+350
+DD9
+  3
+AeccDbDispRepStructure
+350
+F39
+  3
+AeccDbDispRepStructureCSV
+350
+F37
+  3
+AeccDbDispRepSuperelevationDiagram
+350
+DC5
+  3
+AeccDbDispRepSurfaceGrid
+350
+DD5
+  3
+AeccDbDispRepSurfaceGridCSV
+350
+DDF
+  3
+AeccDbDispRepSurfaceTin
+350
+DDE
+  3
+AeccDbDispRepSurfaceTinCSV
+350
+DD2
+  3
+AeccDbDispRepVAlignment
+350
+DDC
+  3
+AeccDbDispRepVAlignmentCSV
+350
+DDD
+  3
+AeccDbDispRepViewFrame
+350
+F6D
+  3
+AeccDbViewAlignment
+350
+DE3
+  3
+AeccDbViewAlignmentCantLabeling
+350
+DE5
+  3
+AeccDbViewAlignmentCSV
+350
+DE1
+  3
+AeccDbViewAlignmentCurveLabel
+350
+DE2
+  3
+AeccDbViewAlignmentDesignSpeedLabeling
+350
+DE6
+  3
+AeccDbViewAlignmentGeomPointLabeling
+350
+DE4
+  3
+AeccDbViewAlignmentIndexedPILabel
+350
+DEB
+  3
+AeccDbViewAlignmentMinorStationLabeling
+350
+DEF
+  3
+AeccDbViewAlignmentPILabel
+350
+DF0
+  3
+AeccDbViewAlignmentSpiralLabel
+350
+DED
+  3
+AeccDbViewAlignmentStaEquLabeling
+350
+DE7
+  3
+AeccDbViewAlignmentStationLabeling
+350
+DE9
+  3
+AeccDbViewAlignmentSuperelevationLabeling
+350
+DE8
+  3
+AeccDbViewAlignmentTable
+350
+DEE
+  3
+AeccDbViewAlignmentTangentLabel
+350
+DEC
+  3
+AeccDbViewAlignmentVAGeomPointLabeling
+350
+DEA
+  3
+AeccDbViewAppurtenanceLabel
+350
+F54
+  3
+AeccDbViewAppurtenanceProfileLabel
+350
+F53
+  3
+AeccDbViewAssembly
+350
+F13
+  3
+AeccDbViewCatchmentAreaLabel
+350
+F67
+  3
+AeccDbViewContour
+350
+F69
+  3
+AeccDbViewCorridor
+350
+F12
+  3
+AeccDbViewCrossingPipeProfileLabel
+350
+F40
+  3
+AeccDbViewCrossingPressurePipeProfileLabel
+350
+F59
+  3
+AeccDbViewFace
+350
+DF8
+  3
+AeccDbViewFaceScheduleTable
+350
+DFA
+  3
+AeccDbViewFeature
+350
+DF5
+  3
+AeccDbViewFeatureLabel
+350
+DF7
+  3
+AeccDbViewFittingLabel
+350
+F56
+  3
+AeccDbViewFittingProfileLabel
+350
+F58
+  3
+AeccDbViewFlowSegmentLabel
+350
+F66
+  3
+AeccDbViewGeneralLabel
+350
+DF4
+  3
+AeccDbViewHorizontalGeometryBandLabeling
+350
+DF2
+  3
+AeccDbViewIntersectionLocationLabel
+350
+F0E
+  3
+AeccDbViewLabeling
+350
+DE0
+  3
+AeccDbViewLegendScheduleTable
+350
+DF1
+  3
+AeccDbViewLineBetweenPointsLabel
+350
+DF3
+  3
+AeccDbViewLotLine
+350
+DF6
+  3
+AeccDbViewLotLineCSV
+350
+DF9
+  3
+AeccDbViewMatchLineLabeling
+350
+F63
+  3
+AeccDbViewNoteLabel
+350
+DFC
+  3
+AeccDbViewOffsetElevLabel
+350
+E01
+  3
+AeccDbViewParcelBoundary
+350
+E06
+  3
+AeccDbViewParcelFaceLabel
+350
+E05
+  3
+AeccDbViewParcelSegmentLabel
+350
+E03
+  3
+AeccDbViewParcelSegmentTable
+350
+E04
+  3
+AeccDbViewPipeAndStructureTable
+350
+F41
+  3
+AeccDbViewPipeLabel
+350
+F43
+  3
+AeccDbViewPipeNetworkBandLabeling
+350
+DFD
+  3
+AeccDbViewPipeProfileLabel
+350
+F45
+  3
+AeccDbViewPipeSectionLabel
+350
+F47
+  3
+AeccDbViewPoint
+350
+F6A
+  3
+AeccDbViewPointEnt
+350
+E00
+  3
+AeccDbViewPointGroup
+350
+DFE
+  3
+AeccDbViewPointScheduleTable
+350
+DFB
+  3
+AeccDbViewPressurePartTable
+350
+F5A
+  3
+AeccDbViewPressurePipeLabel
+350
+F57
+  3
+AeccDbViewPressurePipeProfileLabel
+350
+F5B
+  3
+AeccDbViewPressurePipeSectionLabel
+350
+F55
+  3
+AeccDbViewProfileCrossingLabeling
+350
+DFF
+  3
+AeccDbViewProfileDataBandLabeling
+350
+E02
+  3
+AeccDbViewProfileProjectionLabeling
+350
+E08
+  3
+AeccDbViewProfileViewDepthLabel
+350
+E07
+  3
+AeccDbViewRehabNoteLabel
+350
+F0F
+  3
+AeccDbViewRightofWay
+350
+E09
+  3
+AeccDbViewSampleLineLabeling
+350
+E0B
+  3
+AeccDbViewSectionalDataBandLabeling
+350
+E13
+  3
+AeccDbViewSectionCorridorPointLabeling
+350
+E34
+  3
+AeccDbViewSectionCrossingLabeling
+350
+E11
+  3
+AeccDbViewSectionDataBandLabeling
+350
+E10
+  3
+AeccDbViewSectionGradeBreakLabeling
+350
+E0E
+  3
+AeccDbViewSectionMinorOffsetLabeling
+350
+E0A
+  3
+AeccDbViewSectionOffsetLabeling
+350
+E0F
+  3
+AeccDbViewSectionProjectionLabeling
+350
+E0C
+  3
+AeccDbViewSectionSegmentBandLabeling
+350
+E0D
+  3
+AeccDbViewSectionSegmentLabeling
+350
+E16
+  3
+AeccDbViewSectionViewDepthLabel
+350
+E14
+  3
+AeccDbViewSpanningPipeLabel
+350
+F44
+  3
+AeccDbViewSpanningPipeProfileLabel
+350
+F42
+  3
+AeccDbViewStaElevLabel
+350
+E1A
+  3
+AeccDbViewStaOffsetLabel
+350
+E12
+  3
+AeccDbViewStructureLabel
+350
+F46
+  3
+AeccDbViewStructureProfileLabel
+350
+F48
+  3
+AeccDbViewStructureSectionLabel
+350
+F49
+  3
+AeccDbViewSubassembly
+350
+F14
+  3
+AeccDbViewSuperElevationBandLabeling
+350
+E19
+  3
+AeccDbViewSurfaceContourLabeling
+350
+E1C
+  3
+AeccDbViewSurfaceElevLabel
+350
+E1B
+  3
+AeccDbViewSurfaceSlopeLabel
+350
+E1D
+  3
+AeccDbViewSvFigure
+350
+F5D
+  3
+AeccDbViewSvFigureCSV
+350
+F5C
+  3
+AeccDbViewSvFigureLabel
+350
+F61
+  3
+AeccDbViewSvFigureProfile
+350
+F5E
+  3
+AeccDbViewSvFigureSection
+350
+F5F
+  3
+AeccDbViewSvFigureSegmentLabel
+350
+F60
+  3
+AeccDbViewSvNetwork
+350
+F62
+  3
+AeccDbViewTangentIntersectionTable
+350
+E15
+  3
+AeccDbViewVAlignmentCrestCurveLabeling
+350
+E17
+  3
+AeccDbViewVAlignmentHAGeomPointLabeling
+350
+E18
+  3
+AeccDbViewVAlignmentLineLabeling
+350
+E20
+  3
+AeccDbViewVAlignmentMinorStationLabeling
+350
+E1F
+  3
+AeccDbViewVAlignmentPVILabeling
+350
+E23
+  3
+AeccDbViewVAlignmentSagCurveLabeling
+350
+E1E
+  3
+AeccDbViewVAlignmentStationLabeling
+350
+E21
+  3
+AeccDbViewVerticalGeometryBandLabeling
+350
+E22
+  3
+AeccDbViewViewFrameLabeling
+350
+F64
+  3
+AeccuDbDispRepColBlock
+350
+F19
+  3
+AeccuDbDispRepColCircArc2d
+350
+F17
+  3
+AeccuDbDispRepColConCoincident
+350
+F15
+  3
+AeccuDbDispRepColConConcentric
+350
+F16
+  3
+AeccuDbDispRepColConEqualDistance
+350
+F18
+  3
+AeccuDbDispRepColConMidpoint
+350
+F23
+  3
+AeccuDbDispRepColConnector
+350
+F25
+  3
+AeccuDbDispRepColConNormal
+350
+F20
+  3
+AeccuDbDispRepColConParallel
+350
+F1C
+  3
+AeccuDbDispRepColConPerpendicular
+350
+F1D
+  3
+AeccuDbDispRepColConSymmetric
+350
+F1F
+  3
+AeccuDbDispRepColConTangent
+350
+F1B
+  3
+AeccuDbDispRepColDimAngle
+350
+F1E
+  3
+AeccuDbDispRepColDimDiameter
+350
+F1A
+  3
+AeccuDbDispRepColDimDistance
+350
+F21
+  3
+AeccuDbDispRepColDimLength
+350
+F22
+  3
+AeccuDbDispRepColDimMajorRadius
+350
+F26
+  3
+AeccuDbDispRepColDimMinorRadius
+350
+F2B
+  3
+AeccuDbDispRepColDimRadius
+350
+F24
+  3
+AeccuDbDispRepColEllipArc2d
+350
+F2F
+  3
+AeccuDbDispRepColLayoutData
+350
+F28
+  3
+AeccuDbDispRepColLine2d
+350
+F2C
+  3
+AeccuDbDispRepColModAdd
+350
+F2A
+  3
+AeccuDbDispRepColModCutPlane
+350
+F29
+  3
+AeccuDbDispRepColModExtrusion
+350
+F30
+  3
+AeccuDbDispRepColModGroup
+350
+F2D
+  3
+AeccuDbDispRepColModPath
+350
+F2E
+  3
+AeccuDbDispRepColModSubtract
+350
+F27
+  3
+AeccuDbDispRepColModTransition
+350
+F31
+  3
+AeccuDbDispRepColPoint2d
+350
+F35
+  3
+AeccuDbDispRepColProfile
+350
+F34
+  3
+AeccuDbDispRepColWorkPlane
+350
+F33
+  3
+AeccuDbDispRepColWorkPlaneRef
+350
+F32
+  3
+AeccViewGrade
+350
+F6C
+  3
+AecCvViewSection
+350
+F6B
+  3
+AecDbDispRep2dSection
+350
+E39
+  3
+AecDbDispRepAnchor
+350
+E3D
+  3
+AecDbDispRepAnchorBubToGrid
+350
+E6D
+  3
+AecDbDispRepAnchorBubToGridMdl
+350
+E6B
+  3
+AecDbDispRepAnchorBubToGridRcp
+350
+E74
+  3
+AecDbDispRepAnchorEntToNode
+350
+E35
+  3
+AecDbDispRepAnchorExtendedTagToEnt
+350
+E3E
+  3
+AecDbDispRepAnchorTagToEnt
+350
+E3B
+  3
+AecDbDispRepBdgElevLineModel
+350
+E72
+  3
+AecDbDispRepBdgElevLinePlan
+350
+E5D
+  3
+AecDbDispRepBdgElevLinePlan100
+350
+E28
+  3
+AecDbDispRepBdgElevLinePlan50
+350
+D9D
+  3
+AecDbDispRepBdgElevLineRcp
+350
+E67
+  3
+AecDbDispRepBdgSectionLineModel
+350
+E6F
+  3
+AecDbDispRepBdgSectionLinePlan
+350
+E26
+  3
+AecDbDispRepBdgSectionLinePlan100
+350
+E2C
+  3
+AecDbDispRepBdgSectionLinePlan50
+350
+DA3
+  3
+AecDbDispRepBdgSectionLineRcp
+350
+E69
+  3
+AecDbDispRepBdgSectionModel
+350
+E71
+  3
+AecDbDispRepBdgSectionSubDiv
+350
+E84
+  3
+AecDbDispRepCeilingGrid
+350
+E30
+  3
+AecDbDispRepCeilingGridModel
+350
+E78
+  3
+AecDbDispRepCeilingGridPlan100
+350
+E2A
+  3
+AecDbDispRepCeilingGridPlan50
+350
+DA7
+  3
+AecDbDispRepCeilingGridRcp
+350
+E8A
+  3
+AecDbDispRepClipVolModel
+350
+E37
+  3
+AecDbDispRepClipVolPlan
+350
+E53
+  3
+AecDbDispRepClipVolResSubDiv
+350
+E4C
+  3
+AecDbDispRepClipVolResult
+350
+E52
+  3
+AecDbDispRepColumnGrid
+350
+E2E
+  3
+AecDbDispRepColumnGridModel
+350
+E88
+  3
+AecDbDispRepColumnGridPlan100
+350
+E24
+  3
+AecDbDispRepColumnGridPlan50
+350
+DA5
+  3
+AecDbDispRepColumnGridRcp
+350
+E7C
+  3
+AecDbDispRepCurtainWallLayoutModel
+350
+E7E
+  3
+AecDbDispRepCurtainWallLayoutPlan
+350
+D83
+  3
+AecDbDispRepCurtainWallLayoutPlan100
+350
+D8D
+  3
+AecDbDispRepCurtainWallLayoutPlan50
+350
+DBA
+  3
+AecDbDispRepCurtainWallUnitModel
+350
+E80
+  3
+AecDbDispRepCurtainWallUnitPlan
+350
+D8F
+  3
+AecDbDispRepCurtainWallUnitPlan100
+350
+D87
+  3
+AecDbDispRepCurtainWallUnitPlan50
+350
+DB4
+  3
+AecDbDispRepDimGroupPlan
+350
+E86
+  3
+AecDbDispRepDimGroupPlan100
+350
+E7A
+  3
+AecDbDispRepDimGroupPlan50
+350
+E82
+  3
+AecDbDispRepDisplayTheme
+350
+E40
+  3
+AecDbDispRepDoorElev
+350
+E96
+  3
+AecDbDispRepDoorModel
+350
+E76
+  3
+AecDbDispRepDoorNominal
+350
+E8E
+  3
+AecDbDispRepDoorPlan
+350
+E98
+  3
+AecDbDispRepDoorPlan50
+350
+EA0
+  3
+AecDbDispRepDoorPlanHekto
+350
+E94
+  3
+AecDbDispRepDoorRcp
+350
+E90
+  3
+AecDbDispRepDoorThresholdPlan
+350
+E9E
+  3
+AecDbDispRepDoorThresholdSymbolPlan
+350
+E9A
+  3
+AecDbDispRepEditInPlaceProfile
+350
+E46
+  3
+AecDbDispRepEntRef
+350
+E48
+  3
+AecDbDispRepLayoutCurve
+350
+E4A
+  3
+AecDbDispRepLayoutGrid2d
+350
+E4E
+  3
+AecDbDispRepLayoutGrid3d
+350
+E42
+  3
+AecDbDispRepMaskBlockRef
+350
+E44
+  3
+AecDbDispRepMaskBlockRefRcp
+350
+E8C
+  3
+AecDbDispRepMassElemModel
+350
+E61
+  3
+AecDbDispRepMassElemPlan100
+350
+E92
+  3
+AecDbDispRepMassElemPlan50
+350
+E9C
+  3
+AecDbDispRepMassElemRcp
+350
+EAB
+  3
+AecDbDispRepMassElemSchem
+350
+E65
+  3
+AecDbDispRepMassGroupModel
+350
+E5F
+  3
+AecDbDispRepMassGroupPlan
+350
+E63
+  3
+AecDbDispRepMassGroupPlan100
+350
+EA5
+  3
+AecDbDispRepMassGroupPlan50
+350
+EA7
+  3
+AecDbDispRepMassGroupRcp
+350
+EAD
+  3
+AecDbDispRepMaterial
+350
+E50
+  3
+AecDbDispRepMvBlockRef
+350
+E57
+  3
+AecDbDispRepMvBlockRefModel
+350
+E5A
+  3
+AecDbDispRepMvBlockRefPlan100
+350
+D80
+  3
+AecDbDispRepMvBlockRefPlan50
+350
+DB3
+  3
+AecDbDispRepMvBlockRefRcp
+350
+EA4
+  3
+AecDbDispRepOpening
+350
+EA9
+  3
+AecDbDispRepOpeningModel
+350
+EAF
+  3
+AecDbDispRepOpeningPlan100
+350
+EA2
+  3
+AecDbDispRepOpeningPlan50
+350
+EB1
+  3
+AecDbDispRepOpeningPlanReflected
+350
+EB3
+  3
+AecDbDispRepOpeningSillPlan
+350
+EC1
+  3
+AecDbDispRepPolygonModel
+350
+E58
+  3
+AecDbDispRepPolygonTrueColour
+350
+E5B
+  3
+AecDbDispRepRailingModel
+350
+EB7
+  3
+AecDbDispRepRailingPlan
+350
+EBD
+  3
+AecDbDispRepRailingPlan100
+350
+EBB
+  3
+AecDbDispRepRailingPlan50
+350
+EB9
+  3
+AecDbDispRepRoofModel
+350
+EC3
+  3
+AecDbDispRepRoofPlan
+350
+D85
+  3
+AecDbDispRepRoofPlan100
+350
+D81
+  3
+AecDbDispRepRoofPlan50
+350
+DB6
+  3
+AecDbDispRepRoofRcp
+350
+EBF
+  3
+AecDbDispRepRoofSlabModel
+350
+EC7
+  3
+AecDbDispRepRoofSlabPlan
+350
+D8B
+  3
+AecDbDispRepRoofSlabPlan100
+350
+D93
+  3
+AecDbDispRepRoofSlabPlan50
+350
+DB1
+  3
+AecDbDispRepScheduleTable
+350
+F07
+  3
+AecDbDispRepSlabModel
+350
+EB5
+  3
+AecDbDispRepSlabPlan
+350
+D89
+  3
+AecDbDispRepSlabPlan100
+350
+D99
+  3
+AecDbDispRepSlabPlan50
+350
+DBC
+  3
+AecDbDispRepSlice
+350
+E55
+  3
+AecDbDispRepSpaceDecomposed
+350
+ECD
+  3
+AecDbDispRepSpaceModel
+350
+EC9
+  3
+AecDbDispRepSpacePlan
+350
+D95
+  3
+AecDbDispRepSpacePlan100
+350
+D9B
+  3
+AecDbDispRepSpacePlan50
+350
+DBE
+  3
+AecDbDispRepSpaceRcp
+350
+ECF
+  3
+AecDbDispRepSpaceVolume
+350
+ECB
+  3
+AecDbDispRepStairModel
+350
+EC5
+  3
+AecDbDispRepStairPlan
+350
+ED1
+  3
+AecDbDispRepStairPlan100
+350
+EDD
+  3
+AecDbDispRepStairPlan50
+350
+EE1
+  3
+AecDbDispRepStairPlanOverlapping
+350
+ED9
+  3
+AecDbDispRepStairRcp
+350
+EE5
+  3
+AecDbDispRepWallGraph
+350
+EDB
+  3
+AecDbDispRepWallModel
+350
+EDF
+  3
+AecDbDispRepWallPlan
+350
+D91
+  3
+AecDbDispRepWallPlan100
+350
+D97
+  3
+AecDbDispRepWallPlan50
+350
+DAD
+  3
+AecDbDispRepWallRcp
+350
+ED5
+  3
+AecDbDispRepWallSchem
+350
+EE3
+  3
+AecDbDispRepWindowAssemblyModel
+350
+ED3
+  3
+AecDbDispRepWindowAssemblyPlan
+350
+DA1
+  3
+AecDbDispRepWindowAssemblyPlan100
+350
+D9F
+  3
+AecDbDispRepWindowAssemblyPlan50
+350
+DB8
+  3
+AecDbDispRepWindowAssemblySillPlan
+350
+ED7
+  3
+AecDbDispRepWindowElev
+350
+EEB
+  3
+AecDbDispRepWindowModel
+350
+EED
+  3
+AecDbDispRepWindowNominal
+350
+EE9
+  3
+AecDbDispRepWindowPlan
+350
+EEF
+  3
+AecDbDispRepWindowPlan100
+350
+EF5
+  3
+AecDbDispRepWindowPlan50
+350
+EF1
+  3
+AecDbDispRepWindowRcp
+350
+EF3
+  3
+AecDbDispRepWindowSillPlan
+350
+EE7
+  3
+AecDbDispRepZone
+350
+DAB
+  3
+AecDbDispRepZonePlan100
+350
+DA9
+  3
+AecDbDispRepZonePlan50
+350
+DAF
+  3
+AecsDbDispRepMemberElevationDesign
+350
+EF7
+  3
+AecsDbDispRepMemberElevationDetail
+350
+F05
+  3
+AecsDbDispRepMemberLogical
+350
+F03
+  3
+AecsDbDispRepMemberModelDesign
+350
+EFB
+  3
+AecsDbDispRepMemberModelDetail
+350
+EFD
+  3
+AecsDbDispRepMemberPlanDesign
+350
+F01
+  3
+AecsDbDispRepMemberPlanDetail
+350
+EFF
+  3
+AecsDbDispRepMemberPlanSketch
+350
+EF9
   0
 DICTIONARY
   5
@@ -13904,6 +15338,570 @@ C
 AcDbDictionary
 281
      1
+  3
+*A142
+350
+D82
+  3
+*A143
+350
+D84
+  3
+*A144
+350
+D86
+  3
+*A145
+350
+D88
+  3
+*A146
+350
+D8A
+  3
+*A147
+350
+D8C
+  3
+*A148
+350
+D8E
+  3
+*A149
+350
+D90
+  3
+*A150
+350
+D92
+  3
+*A151
+350
+D94
+  3
+*A152
+350
+D96
+  3
+*A153
+350
+D98
+  3
+*A154
+350
+D9A
+  3
+*A155
+350
+D9C
+  3
+*A156
+350
+D9E
+  3
+*A157
+350
+DA0
+  3
+*A158
+350
+DA2
+  3
+*A159
+350
+DA4
+  3
+*A160
+350
+DA6
+  3
+*A161
+350
+DA8
+  3
+*A162
+350
+DAA
+  3
+*A163
+350
+DAC
+  3
+*A164
+350
+DAE
+  3
+*A165
+350
+DB0
+  3
+*A166
+350
+DB2
+  3
+*A167
+350
+DB5
+  3
+*A168
+350
+DB7
+  3
+*A169
+350
+DB9
+  3
+*A170
+350
+DBB
+  3
+*A171
+350
+DBD
+  3
+*A172
+350
+DBF
+  3
+*A173
+350
+E25
+  3
+*A174
+350
+E27
+  3
+*A175
+350
+E29
+  3
+*A176
+350
+E2B
+  3
+*A177
+350
+E2D
+  3
+*A178
+350
+E2F
+  3
+*A179
+350
+E31
+  3
+*A180
+350
+E36
+  3
+*A181
+350
+E38
+  3
+*A182
+350
+E3A
+  3
+*A183
+350
+E3C
+  3
+*A184
+350
+E3F
+  3
+*A185
+350
+E41
+  3
+*A186
+350
+E43
+  3
+*A187
+350
+E45
+  3
+*A188
+350
+E47
+  3
+*A189
+350
+E49
+  3
+*A190
+350
+E4B
+  3
+*A191
+350
+E4D
+  3
+*A192
+350
+E4F
+  3
+*A193
+350
+E51
+  3
+*A194
+350
+E54
+  3
+*A195
+350
+E56
+  3
+*A196
+350
+E59
+  3
+*A197
+350
+E5C
+  3
+*A198
+350
+E5E
+  3
+*A199
+350
+E60
+  3
+*A200
+350
+E62
+  3
+*A201
+350
+E64
+  3
+*A202
+350
+E66
+  3
+*A203
+350
+E68
+  3
+*A204
+350
+E6A
+  3
+*A205
+350
+E6C
+  3
+*A206
+350
+E6E
+  3
+*A207
+350
+E70
+  3
+*A208
+350
+E73
+  3
+*A209
+350
+E75
+  3
+*A210
+350
+E77
+  3
+*A211
+350
+E79
+  3
+*A212
+350
+E7B
+  3
+*A213
+350
+E7D
+  3
+*A214
+350
+E7F
+  3
+*A215
+350
+E81
+  3
+*A216
+350
+E83
+  3
+*A217
+350
+E85
+  3
+*A218
+350
+E87
+  3
+*A219
+350
+E89
+  3
+*A220
+350
+E8B
+  3
+*A221
+350
+E8D
+  3
+*A222
+350
+E8F
+  3
+*A223
+350
+E91
+  3
+*A224
+350
+E93
+  3
+*A225
+350
+E95
+  3
+*A226
+350
+E97
+  3
+*A227
+350
+E99
+  3
+*A228
+350
+E9B
+  3
+*A229
+350
+E9D
+  3
+*A230
+350
+E9F
+  3
+*A231
+350
+EA1
+  3
+*A232
+350
+EA3
+  3
+*A233
+350
+EA6
+  3
+*A234
+350
+EA8
+  3
+*A235
+350
+EAA
+  3
+*A236
+350
+EAC
+  3
+*A237
+350
+EAE
+  3
+*A238
+350
+EB0
+  3
+*A239
+350
+EB2
+  3
+*A240
+350
+EB4
+  3
+*A241
+350
+EB6
+  3
+*A242
+350
+EB8
+  3
+*A243
+350
+EBA
+  3
+*A244
+350
+EBC
+  3
+*A245
+350
+EBE
+  3
+*A246
+350
+EC0
+  3
+*A247
+350
+EC2
+  3
+*A248
+350
+EC4
+  3
+*A249
+350
+EC6
+  3
+*A250
+350
+EC8
+  3
+*A251
+350
+ECA
+  3
+*A252
+350
+ECC
+  3
+*A253
+350
+ECE
+  3
+*A254
+350
+ED0
+  3
+*A255
+350
+ED2
+  3
+*A256
+350
+ED4
+  3
+*A257
+350
+ED6
+  3
+*A258
+350
+ED8
+  3
+*A259
+350
+EDA
+  3
+*A260
+350
+EDC
+  3
+*A261
+350
+EDE
+  3
+*A262
+350
+EE0
+  3
+*A263
+350
+EE2
+  3
+*A264
+350
+EE4
+  3
+*A265
+350
+EE6
+  3
+*A266
+350
+EE8
+  3
+*A267
+350
+EEA
+  3
+*A268
+350
+EEC
+  3
+*A269
+350
+EEE
+  3
+*A270
+350
+EF0
+  3
+*A271
+350
+EF2
+  3
+*A272
+350
+EF4
+  3
+*A273
+350
+EF6
+  3
+*A274
+350
+EF8
+  3
+*A275
+350
+EFA
+  3
+*A276
+350
+EFC
+  3
+*A277
+350
+EFE
+  3
+*A278
+350
+F00
+  3
+*A279
+350
+F02
+  3
+*A280
+350
+F04
+  3
+*A281
+350
+F06
+  3
+*A282
+350
+F08
   0
 DICTIONARY
   5
@@ -13936,6 +15934,10 @@ C
 AcDbDictionary
 281
      1
+  3
+AEC_VARS_DWG_SETUP
+350
+D77
   0
 XRECORD
   5
@@ -14027,60 +16029,6 @@ C:\ProgramData\Autodesk\C3D 2020\MapCache\Чертеж1GWS1625657177.xml
   0
 DICTIONARY
   5
-1A2A
-102
-{ACAD_REACTORS
-330
-C
-102
-}
-330
-C
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  0
-DICTIONARY
-  5
-1A2B
-102
-{ACAD_REACTORS
-330
-C
-102
-}
-330
-C
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  0
-DICTIONARY
-  5
-1A2C
-102
-{ACAD_REACTORS
-330
-C
-102
-}
-330
-C
-100
-AcDbDictionary
-280
-     1
-281
-     1
-  0
-DICTIONARY
-  5
 44D
 102
 {ACAD_REACTORS
@@ -14167,13 +16115,13 @@ AcDbSortentsTable
 330
 70
 331
-193E
-  5
-1933
-331
 18DB
   5
 1934
+331
+193E
+  5
+1933
   0
 ACDBDETAILVIEWSTYLE
   5
@@ -14181,7 +16129,7 @@ ACDBDETAILVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A64
+1A1B
 102
 }
 102
@@ -15345,7 +17293,7 @@ MLEADERSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A60
+1A17
 102
 }
 102
@@ -16103,7 +18051,7 @@ ACDBSECTIONVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A62
+1A19
 102
 }
 102
@@ -16221,7 +18169,7 @@ ANSI31
  40
 -0.2617993877991494
  40
-1.832595714594044
+1.832595714594045
   0
 TABLESTYLE
   5
@@ -16625,7 +18573,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A3A
+19F1
 102
 }
 102
@@ -16773,7 +18721,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A38
+19EF
 102
 }
 102
@@ -16921,7 +18869,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A46
+19FD
 102
 }
 102
@@ -17069,7 +19017,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A4E
+1A05
 102
 }
 102
@@ -17219,7 +19167,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A40
+19F7
 102
 }
 102
@@ -17367,7 +19315,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A44
+19FB
 102
 }
 102
@@ -17515,7 +19463,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A5E
+1A15
 102
 }
 102
@@ -17663,7 +19611,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A4C
+1A03
 102
 }
 102
@@ -17811,7 +19759,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A30
+19E7
 102
 }
 102
@@ -17959,7 +19907,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A32
+19E9
 102
 }
 102
@@ -18107,7 +20055,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A34
+19EB
 102
 }
 102
@@ -18255,7 +20203,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A36
+19ED
 102
 }
 102
@@ -18403,7 +20351,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A3E
+19F5
 102
 }
 102
@@ -18551,7 +20499,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A5A
+1A11
 102
 }
 102
@@ -18699,7 +20647,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A4A
+1A01
 102
 }
 102
@@ -18847,7 +20795,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A5C
+1A13
 102
 }
 102
@@ -18995,7 +20943,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A42
+19F9
 102
 }
 102
@@ -19143,7 +21091,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A58
+1A0F
 102
 }
 102
@@ -19293,7 +21241,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A56
+1A0D
 102
 }
 102
@@ -19441,7 +21389,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A50
+1A07
 102
 }
 102
@@ -19589,7 +21537,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A52
+1A09
 102
 }
 102
@@ -19737,7 +21685,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A48
+19FF
 102
 }
 102
@@ -19885,7 +21833,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A3C
+19F3
 102
 }
 102
@@ -20033,7 +21981,7 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
-1A54
+1A0B
 102
 }
 102
@@ -20336,6 +22284,58 @@ DictionaryVariables
      0
   1
 ByLayer
+  0
+DICTIONARY
+  5
+19E6
+102
+{ACAD_REACTORS
+330
+19E4
+102
+}
+330
+19E4
+100
+AcDbDictionary
+281
+     1
+  0
+DICTIONARY
+  5
+19E5
+102
+{ACAD_REACTORS
+330
+19E4
+102
+}
+330
+19E4
+100
+AcDbDictionary
+281
+     1
+  3
+2349184673792
+350
+19E0
+  3
+2349184673808
+350
+19E1
+  3
+2349184673824
+350
+19E2
+  3
+2349184673840
+350
+19E3
+  3
+2349417729904
+350
+19DF
   0
 XRECORD
   5
@@ -21675,7 +23675,7 @@ AcDbXrecord
   0
 DICTIONARY
   5
-1A64
+1A1B
 330
 6B
 100
@@ -21687,7 +23687,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A65
+1A1C
   0
 DICTIONARY
   5
@@ -21803,7 +23803,7 @@ SPECULARTILE
   0
 DICTIONARY
   5
-1A60
+1A17
 330
 67
 100
@@ -21815,11 +23815,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A61
+1A18
   0
 DICTIONARY
   5
-1A62
+1A19
 330
 69
 100
@@ -21831,7 +23831,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A63
+1A1A
   0
 DICTIONARY
   5
@@ -21847,7 +23847,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-1A2E
+19DD
   0
 DICTIONARY
   5
@@ -21863,11 +23863,11 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-1A2D
+19DC
   0
 DICTIONARY
   5
-1A3A
+19F1
 330
 2F
 100
@@ -21879,11 +23879,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A3B
+19F2
   0
 DICTIONARY
   5
-1A38
+19EF
 330
 2E
 100
@@ -21895,11 +23895,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A39
+19F0
   0
 DICTIONARY
   5
-1A46
+19FD
 330
 35
 100
@@ -21911,11 +23911,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A47
+19FE
   0
 DICTIONARY
   5
-1A4E
+1A05
 330
 39
 100
@@ -21927,11 +23927,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A4F
+1A06
   0
 DICTIONARY
   5
-1A40
+19F7
 330
 32
 100
@@ -21943,11 +23943,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A41
+19F8
   0
 DICTIONARY
   5
-1A44
+19FB
 330
 34
 100
@@ -21959,11 +23959,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A45
+19FC
   0
 DICTIONARY
   5
-1A5E
+1A15
 330
 41
 100
@@ -21975,11 +23975,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A5F
+1A16
   0
 DICTIONARY
   5
-1A4C
+1A03
 330
 38
 100
@@ -21991,11 +23991,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A4D
+1A04
   0
 DICTIONARY
   5
-1A30
+19E7
 330
 2A
 100
@@ -22007,11 +24007,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A31
+19E8
   0
 DICTIONARY
   5
-1A32
+19E9
 330
 2B
 100
@@ -22023,11 +24023,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A33
+19EA
   0
 DICTIONARY
   5
-1A34
+19EB
 330
 2C
 100
@@ -22039,11 +24039,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A35
+19EC
   0
 DICTIONARY
   5
-1A36
+19ED
 330
 2D
 100
@@ -22055,11 +24055,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A37
+19EE
   0
 DICTIONARY
   5
-1A3E
+19F5
 330
 31
 100
@@ -22071,11 +24071,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A3F
+19F6
   0
 DICTIONARY
   5
-1A5A
+1A11
 330
 3F
 100
@@ -22087,11 +24087,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A5B
+1A12
   0
 DICTIONARY
   5
-1A4A
+1A01
 330
 37
 100
@@ -22103,11 +24103,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A4B
+1A02
   0
 DICTIONARY
   5
-1A5C
+1A13
 330
 40
 100
@@ -22119,11 +24119,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A5D
+1A14
   0
 DICTIONARY
   5
-1A42
+19F9
 330
 33
 100
@@ -22135,11 +24135,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A43
+19FA
   0
 DICTIONARY
   5
-1A58
+1A0F
 330
 3E
 100
@@ -22151,11 +24151,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A59
+1A10
   0
 DICTIONARY
   5
-1A56
+1A0D
 330
 3D
 100
@@ -22167,11 +24167,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A57
+1A0E
   0
 DICTIONARY
   5
-1A50
+1A07
 330
 3A
 100
@@ -22183,11 +24183,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A51
+1A08
   0
 DICTIONARY
   5
-1A52
+1A09
 330
 3B
 100
@@ -22199,11 +24199,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A53
+1A0A
   0
 DICTIONARY
   5
-1A48
+19FF
 330
 36
 100
@@ -22215,11 +24215,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A49
+1A00
   0
 DICTIONARY
   5
-1A3C
+19F3
 330
 30
 100
@@ -22231,11 +24231,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A3D
+19F4
   0
 DICTIONARY
   5
-1A54
+1A0B
 330
 3C
 100
@@ -22247,7 +24247,183 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-1A55
+1A0C
+  0
+XRECORD
+  5
+19E0
+102
+{ACAD_REACTORS
+330
+19E5
+102
+}
+330
+19E5
+100
+AcDbXrecord
+280
+     1
+  1
+AcDbDs::TreatedAsObjectDataSchema
+  2
+AcDbDs::TreatedAsObjectData
+280
+     1
+ 91
+        0
+  0
+XRECORD
+  5
+19E1
+102
+{ACAD_REACTORS
+330
+19E5
+102
+}
+330
+19E5
+100
+AcDbXrecord
+280
+     1
+  1
+AcDbDs::LegacySchema
+  2
+AcDbDs::Legacy
+280
+     1
+ 91
+        0
+  0
+XRECORD
+  5
+19E2
+102
+{ACAD_REACTORS
+330
+19E5
+102
+}
+330
+19E5
+100
+AcDbXrecord
+280
+     1
+  1
+AcDbDs::IndexedPropertySchema
+  2
+AcDs:Indexable
+280
+     1
+ 91
+        0
+  0
+XRECORD
+  5
+19E3
+102
+{ACAD_REACTORS
+330
+19E5
+102
+}
+330
+19E5
+100
+AcDbXrecord
+280
+     1
+  1
+AcDbDs::HandleAttributeSchema
+  2
+AcDbDs::HandleAttribute
+280
+     7
+ 91
+        1
+284
+     1
+  0
+XRECORD
+  5
+19DF
+102
+{ACAD_REACTORS
+330
+19E5
+102
+}
+330
+19E5
+100
+AcDbXrecord
+280
+     1
+  1
+AcDb_Thumbnail_Schema
+102
+{ATTRRECORD
+341
+19E0
+  2
+AcDbDs::TreatedAsObjectData
+280
+     1
+291
+     1
+102
+ATTRRECORD}
+102
+{ATTRRECORD
+341
+19E1
+  2
+AcDbDs::Legacy
+280
+     1
+291
+     1
+102
+ATTRRECORD}
+  2
+AcDbDs::ID
+280
+    10
+ 91
+        8
+102
+{ATTRRECORD
+341
+19E2
+  2
+AcDs:Indexable
+280
+     1
+291
+     1
+102
+ATTRRECORD}
+102
+{ATTRRECORD
+341
+19E3
+  2
+AcDbDs::HandleAttribute
+280
+     7
+282
+     1
+102
+ATTRRECORD}
+  2
+Thumbnail_Data
+280
+    15
+ 91
+        0
   0
 DMMAP
   5
@@ -22283,7 +24459,7 @@ AcMapDMMap
  90
         1
  40
-1.797693134862313E+99
+1.797693134862314E+99
  70
      1
 100
@@ -22293,7 +24469,7 @@ AcMapDMMap
  70
      0
  40
-1.797693134862313E+99
+1.797693134862314E+99
 290
      1
 290
@@ -22307,7 +24483,7 @@ Legend
  90
         1
  40
-1.797693134862313E+99
+1.797693134862314E+99
   1
 
  70
@@ -22395,15 +24571,15 @@ C02
   0
 XRECORD
   5
-1A65
+1A1C
 102
 {ACAD_REACTORS
 330
-1A64
+1A1B
 102
 }
 330
-1A64
+1A1B
 100
 AcDbXrecord
 280
@@ -24087,15 +26263,15 @@ AcDbXrecord
   0
 XRECORD
   5
-1A61
+1A18
 102
 {ACAD_REACTORS
 330
-1A60
+1A17
 102
 }
 330
-1A60
+1A17
 100
 AcDbXrecord
 280
@@ -24107,15 +26283,15 @@ ACAD_ROUNDTRIP_2012_MLEADER_STYLE
   0
 XRECORD
   5
-1A63
+1A1A
 102
 {ACAD_REACTORS
 330
-1A62
+1A19
 102
 }
 330
-1A62
+1A19
 100
 AcDbXrecord
 280
@@ -24131,7 +26307,7 @@ FLAGS
   0
 CELLSTYLEMAP
   5
-1A2E
+19DD
 102
 {ACAD_REACTORS
 330
@@ -24777,7 +26953,7 @@ CELLSTYLE_END
   0
 CELLSTYLEMAP
   5
-1A2D
+19DC
 102
 {ACAD_REACTORS
 330
@@ -25423,15 +27599,15 @@ CELLSTYLE_END
   0
 XRECORD
   5
-1A3B
+19F2
 102
 {ACAD_REACTORS
 330
-1A3A
+19F1
 102
 }
 330
-1A3A
+19F1
 100
 AcDbXrecord
 280
@@ -25691,15 +27867,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A39
+19F0
 102
 {ACAD_REACTORS
 330
-1A38
+19EF
 102
 }
 330
-1A38
+19EF
 100
 AcDbXrecord
 280
@@ -25959,15 +28135,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A47
+19FE
 102
 {ACAD_REACTORS
 330
-1A46
+19FD
 102
 }
 330
-1A46
+19FD
 100
 AcDbXrecord
 280
@@ -26227,15 +28403,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A4F
+1A06
 102
 {ACAD_REACTORS
 330
-1A4E
+1A05
 102
 }
 330
-1A4E
+1A05
 100
 AcDbXrecord
 280
@@ -26495,15 +28671,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A41
+19F8
 102
 {ACAD_REACTORS
 330
-1A40
+19F7
 102
 }
 330
-1A40
+19F7
 100
 AcDbXrecord
 280
@@ -26763,15 +28939,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A45
+19FC
 102
 {ACAD_REACTORS
 330
-1A44
+19FB
 102
 }
 330
-1A44
+19FB
 100
 AcDbXrecord
 280
@@ -27031,15 +29207,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A5F
+1A16
 102
 {ACAD_REACTORS
 330
-1A5E
+1A15
 102
 }
 330
-1A5E
+1A15
 100
 AcDbXrecord
 280
@@ -27299,15 +29475,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A4D
+1A04
 102
 {ACAD_REACTORS
 330
-1A4C
+1A03
 102
 }
 330
-1A4C
+1A03
 100
 AcDbXrecord
 280
@@ -27567,15 +29743,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A31
+19E8
 102
 {ACAD_REACTORS
 330
-1A30
+19E7
 102
 }
 330
-1A30
+19E7
 100
 AcDbXrecord
 280
@@ -27835,15 +30011,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A33
+19EA
 102
 {ACAD_REACTORS
 330
-1A32
+19E9
 102
 }
 330
-1A32
+19E9
 100
 AcDbXrecord
 280
@@ -28103,15 +30279,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A35
+19EC
 102
 {ACAD_REACTORS
 330
-1A34
+19EB
 102
 }
 330
-1A34
+19EB
 100
 AcDbXrecord
 280
@@ -28371,15 +30547,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A37
+19EE
 102
 {ACAD_REACTORS
 330
-1A36
+19ED
 102
 }
 330
-1A36
+19ED
 100
 AcDbXrecord
 280
@@ -28639,15 +30815,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A3F
+19F6
 102
 {ACAD_REACTORS
 330
-1A3E
+19F5
 102
 }
 330
-1A3E
+19F5
 100
 AcDbXrecord
 280
@@ -28907,15 +31083,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A5B
+1A12
 102
 {ACAD_REACTORS
 330
-1A5A
+1A11
 102
 }
 330
-1A5A
+1A11
 100
 AcDbXrecord
 280
@@ -29175,15 +31351,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A4B
+1A02
 102
 {ACAD_REACTORS
 330
-1A4A
+1A01
 102
 }
 330
-1A4A
+1A01
 100
 AcDbXrecord
 280
@@ -29443,15 +31619,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A5D
+1A14
 102
 {ACAD_REACTORS
 330
-1A5C
+1A13
 102
 }
 330
-1A5C
+1A13
 100
 AcDbXrecord
 280
@@ -29711,15 +31887,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A43
+19FA
 102
 {ACAD_REACTORS
 330
-1A42
+19F9
 102
 }
 330
-1A42
+19F9
 100
 AcDbXrecord
 280
@@ -29979,15 +32155,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A59
+1A10
 102
 {ACAD_REACTORS
 330
-1A58
+1A0F
 102
 }
 330
-1A58
+1A0F
 100
 AcDbXrecord
 280
@@ -30247,15 +32423,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A57
+1A0E
 102
 {ACAD_REACTORS
 330
-1A56
+1A0D
 102
 }
 330
-1A56
+1A0D
 100
 AcDbXrecord
 280
@@ -30515,15 +32691,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A51
+1A08
 102
 {ACAD_REACTORS
 330
-1A50
+1A07
 102
 }
 330
-1A50
+1A07
 100
 AcDbXrecord
 280
@@ -30783,15 +32959,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A53
+1A0A
 102
 {ACAD_REACTORS
 330
-1A52
+1A09
 102
 }
 330
-1A52
+1A09
 100
 AcDbXrecord
 280
@@ -31051,15 +33227,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A49
+1A00
 102
 {ACAD_REACTORS
 330
-1A48
+19FF
 102
 }
 330
-1A48
+19FF
 100
 AcDbXrecord
 280
@@ -31319,15 +33495,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A3D
+19F4
 102
 {ACAD_REACTORS
 330
-1A3C
+19F3
 102
 }
 330
-1A3C
+19F3
 100
 AcDbXrecord
 280
@@ -31587,15 +33763,15 @@ RTVSPost2010PropOp57
   0
 XRECORD
   5
-1A55
+1A0C
 102
 {ACAD_REACTORS
 330
-1A54
+1A0B
 102
 }
 330
-1A54
+1A0B
 100
 AcDbXrecord
 280
@@ -31893,9 +34069,9 @@ AcMapDMBaseElement
  70
      1
  40
-1.797693134862313E+99
+1.797693134862314E+99
  70
-     1
+        1
  70
      1
  70
@@ -32017,9 +34193,9 @@ AcMapDMSurrogateStyleSets
  70
      1
  40
-1.797693134862313E+99
+1.797693134862314E+99
  70
-     1
+        1
  70
      1
  70

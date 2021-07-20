@@ -1,0 +1,12 @@
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net45\AcadCsObjectsTransform.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net45\AcadCsObjectsTransform.pdb
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net45\DotSpatial.Projections.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csprojAssemblyReference.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.AssemblyInfoInputs.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.AssemblyInfo.cs
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.CoreCompileInputs.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.CopyComplete
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.pdb
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.CsForm.resources
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.GenerateResource.cache
