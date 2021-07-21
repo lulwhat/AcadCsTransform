@@ -9,25 +9,25 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace AcadCsObjectsTransform
 {
     public class CsTransformer
     {
-        [STAThread]
-        [CommandMethod("CsTransform", CommandFlags.UsePickSet)]
-        static public void StartForm()
-        {
-            //System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            System.Windows.Forms.Application.EnableVisualStyles();
-            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-            System.Windows.Forms.Application.Run(new CsForm());
-        }
 
-        static public void Transform()
+        public string projStringInitial;
+        public string projStringTarget;
+        public int objectsCompleted = 0;
+
+        public IEnumerable<int> Transform()
+        //public int Transform(object sender, DoWorkEventArgs e)
         {
+            //BackgroundWorker worker = sender as BackgroundWorker;
+            int progressPercentage = 0;
+
             Document doc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
             Database db = doc.Database;
             Editor ed = doc.Editor;
@@ -51,11 +51,15 @@ namespace AcadCsObjectsTransform
 
             // Select all listed objects
             PromptSelectionResult psr = ed.SelectAll(filter);
-            if (psr.Status != PromptStatus.OK)
-            {
-                ed.WriteMessage("Не найдено ни одного объекта для преобразования\n");
-                return;
-            }
+            //if (psr.Status != PromptStatus.OK)
+            //{
+            //    ed.WriteMessage("Не найдено ни одного объекта для преобразования\n");
+            //    return 0;
+            //}
+
+            int selectedObjectsCount = psr.Value.Count;
+
+            
 
             
             /*
@@ -94,18 +98,17 @@ namespace AcadCsObjectsTransform
             Point3d pt1 = new Point3d();
             Point3d pt2 = new Point3d();
             double chord = new double();
-            int count = 0;
-            var tr = doc.TransactionManager.StartTransaction();
-            using (tr)
+            
+            foreach (SelectedObject so in psr.Value)
             {
-                
-                foreach (SelectedObject so in psr.Value)
+                var tr = doc.TransactionManager.StartTransaction();
+                using (tr)
                 {
                     Entity ent =
-                    (Entity)tr.GetObject(
-                    so.ObjectId,
-                    OpenMode.ForRead
-                    );
+                        (Entity)tr.GetObject(
+                        so.ObjectId,
+                        OpenMode.ForRead
+                        );
 
                     // coordinates transformation cases for all kinds of drawing objects
                     // Regular Polyline
@@ -118,7 +121,7 @@ namespace AcadCsObjectsTransform
                         plBlgs = new List<double>();
                         arcInds = new List<int>();
                         for (int i = 0; i < pl.NumberOfVertices; i++)
-                            { plPts.Add(pl.GetPoint2dAt(i)); }
+                        { plPts.Add(pl.GetPoint2dAt(i)); }
 
 
                         // Collect bulges
@@ -136,26 +139,13 @@ namespace AcadCsObjectsTransform
                             }
                         }
 
-                        //for (int i = 0; i < plBlgs.Count; i++)
-                        //{
-                        //    ed.WriteMessage(plBlgs[i].ToString() + "\n");
-                        //}
-                        //ed.WriteMessage("next\n");
-
-
                         pl.UpgradeOpen();
                         // Write coordinates back to Polyline
                         for (int i = 0; i < pl.NumberOfVertices; i++)
                         {
                             pl.SetPointAt(i, new Point2d(plPts[i].X + 10, plPts[i].Y + 10));
                         }
-                        //for (int i = 0; i < pl.NumberOfVertices - 1; i++)
-                        //{
-                        //    if (arcInds.Contains(i))
-                        //    {
-                        //        pl.SetBulgeAt(i, plArcs[i].Radius * Math.Atan(2) * plBlgs[i]);
-                        //    }
-                        //}
+
                         foreach (int i in arcInds)
                         {
                             if ((pl.Closed) & (i == pl.NumberOfVertices - 1))
@@ -183,11 +173,9 @@ namespace AcadCsObjectsTransform
                             pl.SetBulgeAt(i, blg);
                         }
 
-                            count++;
+                        objectsCompleted++;
                     }
 
-
-                    
                     // Polyline3d
                     Polyline3d pl3d = ent as Polyline3d;
                     if (pl3d != null)
@@ -197,10 +185,9 @@ namespace AcadCsObjectsTransform
                             PolylineVertex3d pV3d = (PolylineVertex3d)tr.GetObject(vId, OpenMode.ForWrite);
                             pV3d.Position = new Point3d(pV3d.Position.X + 10, pV3d.Position.Y + 10, pV3d.Position.Z);
                         }
-                        count++;
+                        objectsCompleted++;
                     }
 
-                    
                     // Polyline 2d
                     Polyline2d pl2d = ent as Polyline2d;
                     if (pl2d != null)
@@ -210,9 +197,9 @@ namespace AcadCsObjectsTransform
                             Vertex2d pV2d = (Vertex2d)tr.GetObject(vId, OpenMode.ForWrite);
                             pV2d.Position = new Point3d(pV2d.Position.X + 10, pV2d.Position.Y + 10, 0);
                         }
-                        count++;
+                        objectsCompleted++;
                     }
-                 
+
                     // Line
                     Line ln = ent as Line;
                     if (ln != null)
@@ -221,7 +208,7 @@ namespace AcadCsObjectsTransform
                         ln = (Line)tr.GetObject(lnid, OpenMode.ForWrite);
                         ln.StartPoint = new Point3d(ln.StartPoint.X + 10, ln.StartPoint.Y + 10, ln.StartPoint.Z);
                         ln.EndPoint = new Point3d(ln.EndPoint.X + 10, ln.EndPoint.Y + 10, ln.EndPoint.Z);
-                        count++;
+                        objectsCompleted++;
                     }
 
 
@@ -231,10 +218,24 @@ namespace AcadCsObjectsTransform
                     {
                         // Vector3d v3 = new Vector3d(1,1,1);
                         // v3.
-                        // ht.GetStretchPoints();
+                        //ht.GetStretchPoints();
                         // ht.set
                         // ht.AppendLoop(HatchLoopTypes.External, );
+                        ObjectId htid = ht.Id;
+                        Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(10, 10, 0));
+                        Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(ht.Origin.X + 10, ht.Origin.Y + 10, 0));
+                        Matrix3d matrixRotation = Matrix3d.Rotation(
+                            30,
+                            new Vector3d(ht.Origin.X, ht.Origin.Y + 10, 0),
+                            new Point3d(ht.Origin.X, ht.Origin.Y, 0)
+                            );
+                        ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
+                        ht.TransformBy(matrixDisplacement);
+                        ht.TransformBy(matrixScaling);
+                        //ht.TransformBy(matrixRotation);
+                        objectsCompleted++;
                     }
+
 
                     // Point
                     DBPoint pt = ent as DBPoint;
@@ -243,7 +244,7 @@ namespace AcadCsObjectsTransform
                         ObjectId ptid = pt.Id;
                         pt = (DBPoint)tr.GetObject(ptid, OpenMode.ForWrite);
                         pt.Position = new Point3d(pt.Position.X + 10, pt.Position.Y + 10, pt.Position.Z);
-                        count++;
+                        objectsCompleted++;
                     }
 
                     // Block
@@ -253,7 +254,7 @@ namespace AcadCsObjectsTransform
                         ObjectId blid = bl.Id;
                         bl = (BlockReference)tr.GetObject(blid, OpenMode.ForWrite);
                         bl.Position = new Point3d(bl.Position.X + 10, bl.Position.Y + 10, bl.Position.Z);
-                        count++;
+                        objectsCompleted++;
                     }
 
                     // DBText
@@ -263,7 +264,7 @@ namespace AcadCsObjectsTransform
                         ObjectId txtid = txt.Id;
                         txt = (DBText)tr.GetObject(txtid, OpenMode.ForWrite);
                         txt.Position = new Point3d(txt.Position.X + 10, txt.Position.Y + 10, txt.Position.Z);
-                        count++;
+                        objectsCompleted++;
                     }
 
                     // MText
@@ -273,9 +274,8 @@ namespace AcadCsObjectsTransform
                         ObjectId mtxtid = mtxt.Id;
                         mtxt = (MText)tr.GetObject(mtxtid, OpenMode.ForWrite);
                         mtxt.Location = new Point3d(mtxt.Location.X + 10, mtxt.Location.Y + 10, mtxt.Location.Z);
-                        count++;
+                        objectsCompleted++;
                     }
-
 
 
                     // Autodesk.AutoCAD.DatabaseServices.Polyline;
@@ -289,12 +289,24 @@ namespace AcadCsObjectsTransform
                     // Autodesk.AutoCAD.DatabaseServices.MText;
 
 
+                    
+                    //worker.ReportProgress(progressPercentage);
+                    //e.Result = progressPercentage;
+                    //Thread.Sleep(100);
+                    tr.Commit();
+                    yield return progressPercentage = (objectsCompleted / selectedObjectsCount * 100);
                 }
-
-            tr.Commit();
-            ed.WriteMessage("Преобразовано " + count.ToString() + " объектов");
-            }
+            //ed.WriteMessage("Преобразовано " + objectsCompleted.ToString() + " объектов\n");
             
+        }
+        //return objectsCompleted;
+            //worker.ReportProgress(100);
+            //worker.CancelAsync();
+            //if (worker.CancellationPending == true)
+            //{
+            //    e.Cancel = true;
+            //    return;
+            //}
         }
     }
 }
