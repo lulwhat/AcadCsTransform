@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {}
+    "C:\\Users\\lulwh\\UG_work\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {
+    "C:\\Users\\lulwh\\UG_work\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
+        "projectUniqueName": "C:\\Users\\lulwh\\UG_work\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
         "projectName": "AcadCsObjectsTransform",
-        "projectPath": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
-        "packagesPath": "C:\\Users\\baidak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baidak\\acad_py_scripts\\AcadCsObjectsTransform\\obj\\",
+        "projectPath": "C:\\Users\\lulwh\\UG_work\\AcadCsObjectsTransform\\AcadCsObjectsTransform.csproj",
+        "packagesPath": "C:\\Users\\lulwh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lulwh\\UG_work\\AcadCsObjectsTransform\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\baidak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lulwh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net47"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,12 +43,6 @@
             "DotSpatial.Projections": {
               "target": "Package",
               "version": "[2.0.0-rc1, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.0, )",
-              "autoReferenced": true
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
+using DotSpatial.Projections;
 
 namespace AcadCsObjectsTransform
 {
@@ -112,23 +113,26 @@ namespace AcadCsObjectsTransform
                 progressBar.Value = 0;
                 startButton.Enabled = false;
 
-                foreach (int progressPercentage in transformer.Transform(
-                    csDict[initialCsComboBox.Text], csDict[targetCsComboBox.Text]
-                    ))
+                // projections info
+                transformer.crsInitial = ProjectionInfo.FromProj4String(csDict[initialCsComboBox.Text]);
+                transformer.crsTarget = ProjectionInfo.FromProj4String(csDict[targetCsComboBox.Text]);
+
+                // transform objects and update progress bar
+                foreach (int progressPercentage in transformer.Transform())
                 {
-                    if (progressPercentage == -1)
+                    if (progressPercentage != -1)
                     {                    
+                        progressBar.Value = progressPercentage;
+                        progressBar.Update();
+                    }
+                    else
+                    {
                         MessageBox.Show(
                         "Не найдено объектов для преобразования",
                             "",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         startButton.Enabled = true;
                         return;
-                    }
-                    else
-                    {
-                        progressBar.Value = progressPercentage;
-                        progressBar.Update();
                     }
                 }
 

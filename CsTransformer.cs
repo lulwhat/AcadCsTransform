@@ -10,21 +10,20 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
 using System.Threading;
-using System.Windows.Forms;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using DotSpatial.Projections;
 
 namespace AcadCsObjectsTransform
 {
     public class CsTransformer
     {
         public int objectsCompleted = 0;
+        public ProjectionInfo crsInitial;
+        public ProjectionInfo crsTarget;
 
-        public IEnumerable<int> Transform(string projStringInitial, string projStringTarget)
-        //public int Transform(object sender, DoWorkEventArgs e)
+        public IEnumerable<int> Transform()
         {
-            int progressPercentage = 0;
-
             Document doc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
             Database db = doc.Database;
             Editor ed = doc.Editor;
@@ -57,23 +56,9 @@ namespace AcadCsObjectsTransform
             int selectedObjectsCount = psr.Value.Count;
 
             // Projections info
-            DotSpatial.Projections.ProjectionInfo crsInitial = 
-                DotSpatial.Projections.ProjectionInfo.FromProj4String(projStringInitial);
-            DotSpatial.Projections.ProjectionInfo crsTarget = 
-                DotSpatial.Projections.ProjectionInfo.FromProj4String(projStringTarget);
-            DotSpatial.Projections.ProjectionInfo crs_wgs = 
-                DotSpatial.Projections.ProjectionInfo.FromEpsgCode(4326);
+            //DotSpatial.Projections.ProjectionInfo crs_wgs = 
+            //    DotSpatial.Projections.ProjectionInfo.FromEpsgCode(4326);
 
-            double[] xy = new double[] {
-                590169.2431,7352219.492,
-                590123.2431,7352231.492,
-                590252.1738,7352269.636
-            };
-            double[] z = {0, 0, 0};
-
-            DotSpatial.Projections.Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, xy.Length / 2);
-
-            
 
             List<Point2d> plPts = new List<Point2d>();
             List<CircularArc2d> plArcs = new List<CircularArc2d>();
@@ -208,7 +193,7 @@ namespace AcadCsObjectsTransform
                     //     ),
                     //     new List<ParameterExpression>() { paramX, paramY, paramZ }
                     // );
-                    Func<double, double, double, double, double, double> projTransform = (double paramX, double paramY, double paramZ) => paramX, paramY, paramZ;
+                    //Func<double, double, double, double, double, double> projTransform = (double paramX, double paramY, double paramZ) => paramX, paramY, paramZ;
 
                     // Hatch - will get back later
                     Hatch ht = ent as Hatch;
@@ -298,9 +283,18 @@ namespace AcadCsObjectsTransform
                     // Autodesk.AutoCAD.DatabaseServices.MText;
   
                     tr.Commit();
-                    yield return progressPercentage = (objectsCompleted / selectedObjectsCount * 100);
+                    yield return objectsCompleted / selectedObjectsCount * 100;
                 }
             }
+        }
+        public (double, double, double) reprojectPoint(double ptX, double ptY, double ptZ)
+        {
+            double[] xy = new double[] { ptX, ptY };
+            double[] z = { ptZ };
+
+            Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
+
+            return (xy[0], xy[1], z[0]);
         }
     }
 }
