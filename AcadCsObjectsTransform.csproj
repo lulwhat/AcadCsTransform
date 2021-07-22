@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net47</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -9,19 +9,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\accoremgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2020\accoremgd.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Acdbmgd">
-      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\acdbmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2020\acdbmgd.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Acmgd">
-      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\acmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2020\acmgd.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="acdbmgdbrep">
-      <HintPath>C:\Program Files\Autodesk\AutoCAD 2019\acdbmgdbrep.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2020\acdbmgdbrep.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System.Xaml" />

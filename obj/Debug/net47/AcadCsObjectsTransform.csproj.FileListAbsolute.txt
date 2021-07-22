@@ -8,3 +8,5 @@ C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\bin\Debug\net47\DotSpatia
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.CopyComplete
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.dll
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.pdb
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.CsForm.resources
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.GenerateResource.cache

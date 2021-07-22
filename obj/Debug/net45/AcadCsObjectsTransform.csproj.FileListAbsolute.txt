@@ -10,3 +10,11 @@ C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTrans
 C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.pdb
 C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.CsForm.resources
 C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.GenerateResource.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csprojAssemblyReference.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.CsForm.resources
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.GenerateResource.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.AssemblyInfoInputs.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.AssemblyInfo.cs
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.csproj.CoreCompileInputs.cache
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.dll
+C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net45\AcadCsObjectsTransform.pdb

@@ -12,20 +12,17 @@ using System.Collections;
 using System.Threading;
 using System.Windows.Forms;
 using System.ComponentModel;
+using System.Linq.Expressions;
 
 namespace AcadCsObjectsTransform
 {
     public class CsTransformer
     {
-
-        public string projStringInitial;
-        public string projStringTarget;
         public int objectsCompleted = 0;
 
-        public IEnumerable<int> Transform()
+        public IEnumerable<int> Transform(string projStringInitial, string projStringTarget)
         //public int Transform(object sender, DoWorkEventArgs e)
         {
-            //BackgroundWorker worker = sender as BackgroundWorker;
             int progressPercentage = 0;
 
             Document doc = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument;
@@ -51,29 +48,19 @@ namespace AcadCsObjectsTransform
 
             // Select all listed objects
             PromptSelectionResult psr = ed.SelectAll(filter);
-            //if (psr.Status != PromptStatus.OK)
-            //{
-            //    ed.WriteMessage("Не найдено ни одного объекта для преобразования\n");
-            //    return 0;
-            //}
+            if (psr.Status != PromptStatus.OK)
+            {
+               ed.WriteMessage("Не найдено ни одного объекта для преобразования\n");
+               yield return -1;
+            }
 
             int selectedObjectsCount = psr.Value.Count;
 
-            
-
-            
-            /*
-
-            // ск-42 зона 10
-            string projstring_initial = 
-                "+proj=tmerc +lat_0=0 +lon_0=57 +k=1 +x_0=10500000 +y_0=0 +ellps=krass +towgs84=23.57,-140.95,-79.8,0,0.35,0.79,-0.22 +units=m +no_defs +axis=neu  +col_0=\"X\" +col_1=\"Y\" +col_2=\"H\"";
-            // ск-42 зона 11
-            string projstring_target = 
-                "+proj=tmerc +lat_0=0 +lon_0=63 +k=1 +x_0=11500000 +y_0=0 +ellps=krass +towgs84=23.92,-141.27,-80.9,0,0.35,0.82,-0.12 +units=m +no_defs +axis=neu  +col_0=\"X\" +col_1=\"Y\" +col_2=\"H\""; 
-            DotSpatial.Projections.ProjectionInfo crs_initial = 
-                DotSpatial.Projections.ProjectionInfo.FromProj4String(projstring_initial);
-            DotSpatial.Projections.ProjectionInfo crs_target = 
-                DotSpatial.Projections.ProjectionInfo.FromProj4String(projstring_target);
+            // Projections info
+            DotSpatial.Projections.ProjectionInfo crsInitial = 
+                DotSpatial.Projections.ProjectionInfo.FromProj4String(projStringInitial);
+            DotSpatial.Projections.ProjectionInfo crsTarget = 
+                DotSpatial.Projections.ProjectionInfo.FromProj4String(projStringTarget);
             DotSpatial.Projections.ProjectionInfo crs_wgs = 
                 DotSpatial.Projections.ProjectionInfo.FromEpsgCode(4326);
 
@@ -84,9 +71,9 @@ namespace AcadCsObjectsTransform
             };
             double[] z = {0, 0, 0};
 
-            DotSpatial.Projections.Reproject.ReprojectPoints(xy, z, crs_initial, crs_target, 0, xy.Length / 2);
+            DotSpatial.Projections.Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, xy.Length / 2);
 
-            */
+            
 
             List<Point2d> plPts = new List<Point2d>();
             List<CircularArc2d> plArcs = new List<CircularArc2d>();
@@ -211,6 +198,17 @@ namespace AcadCsObjectsTransform
                         objectsCompleted++;
                     }
 
+                    // ParameterExpression paramX = Expression.Parameter(typeof(double), "argX");
+                    // ParameterExpression paramY = Expression.Parameter(typeof(double), "argY");
+                    // ParameterExpression paramZ = Expression.Parameter(typeof(double), "argZ");
+                    // LambdaExpression lambdaExpression = Expression.Lambda(
+                    //     Expression.Add(
+                    //         paramX,
+                    //         Expression.Constant(0)
+                    //     ),
+                    //     new List<ParameterExpression>() { paramX, paramY, paramZ }
+                    // );
+                    Func<double, double, double, double, double, double> projTransform = (double paramX, double paramY, double paramZ) => paramX, paramY, paramZ;
 
                     // Hatch - will get back later
                     Hatch ht = ent as Hatch;
@@ -223,17 +221,28 @@ namespace AcadCsObjectsTransform
                         // ht.AppendLoop(HatchLoopTypes.External, );
                         ObjectId htid = ht.Id;
                         Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(10, 10, 0));
-                        Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(ht.Origin.X + 10, ht.Origin.Y + 10, 0));
+                        Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(0, 0, 0));
                         Matrix3d matrixRotation = Matrix3d.Rotation(
                             30,
                             new Vector3d(ht.Origin.X, ht.Origin.Y + 10, 0),
                             new Point3d(ht.Origin.X, ht.Origin.Y, 0)
                             );
                         ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
-                        ht.TransformBy(matrixDisplacement);
-                        ht.TransformBy(matrixScaling);
+                        // ht.TransformBy(matrixDisplacement);
+                        // ht.TransformBy(matrixScaling);
                         //ht.TransformBy(matrixRotation);
                         objectsCompleted++;
+                        ed.WriteMessage(string.Format(
+                            "origin: {0},{1}", ht.Origin.X.ToString(), ht.Origin.Y.ToString()
+                            ));
+                        Point3dCollection stretchPoints = new Point3dCollection();
+                        ht.GetStretchPoints(stretchPoints);
+                        IntegerCollection stretchIndices = new IntegerCollection();
+                        for(int i = 0; i < stretchPoints.Count; i++)
+                        {
+                            stretchIndices.Add(i);
+                        }
+                        ht.MoveStretchPointsAt(stretchIndices, new Vector3d(10,10,0));
                     }
 
 
@@ -287,26 +296,11 @@ namespace AcadCsObjectsTransform
                     // Autodesk.AutoCAD.DatabaseServices.BlockReference;
                     // Autodesk.AutoCAD.DatabaseServices.DBText;
                     // Autodesk.AutoCAD.DatabaseServices.MText;
-
-
-                    
-                    //worker.ReportProgress(progressPercentage);
-                    //e.Result = progressPercentage;
-                    //Thread.Sleep(100);
+  
                     tr.Commit();
                     yield return progressPercentage = (objectsCompleted / selectedObjectsCount * 100);
                 }
-            //ed.WriteMessage("Преобразовано " + objectsCompleted.ToString() + " объектов\n");
-            
-        }
-        //return objectsCompleted;
-            //worker.ReportProgress(100);
-            //worker.CancelAsync();
-            //if (worker.CancellationPending == true)
-            //{
-            //    e.Cancel = true;
-            //    return;
-            //}
+            }
         }
     }
 }

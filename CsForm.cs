@@ -15,20 +15,12 @@ namespace AcadCsObjectsTransform
 {
     public partial class CsForm : Form
     {
-        BackgroundWorker worker;
         CsTransformer transformer;
         public CsForm()
         {
             InitializeComponent();
             startButton.Click += new EventHandler(this.startButton_Click);
             GsToComboBox();
-
-            worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
-            worker.WorkerSupportsCancellation = true;
-            worker.ProgressChanged += worker_ProgressChanged;
-            worker.DoWork += worker_DoWork;
-            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
         }
 
 
@@ -85,12 +77,6 @@ namespace AcadCsObjectsTransform
 
         }
 
-        double initialXOffsetValue = 0.0;
-        double initialYOffsetValue = 0.0;
-        double targetXOffsetValue = 0.0;
-        double targetYOffsetValue = 0.0;
-        int objectsTransformedCount = 0;
-
         private void startButton_Click(object sender, EventArgs e)
         {
             transformer = new CsTransformer();
@@ -110,56 +96,48 @@ namespace AcadCsObjectsTransform
             // check for offset errors and start transformation
             try
             {
-                initialXOffsetValue = double.Parse(
+                double initialXOffsetValue = double.Parse(
                     initialXOffsetTextBox.Text.Replace(",", ".")
                     );
-                initialYOffsetValue = double.Parse(
+                double initialYOffsetValue = double.Parse(
                     initialYOffsetTextBox.Text.Replace(",", ".")
                     );
-                targetXOffsetValue = double.Parse(
+                double targetXOffsetValue = double.Parse(
                     targetXOffsetTextBox.Text.Replace(",", ".")
                     );
-                targetYOffsetValue = double.Parse(
+                double targetYOffsetValue = double.Parse(
                     targetYOffsetTextBox.Text.Replace(",", ".")
                     );
 
-                transformer.projStringInitial = csDict[initialCsComboBox.Text];
-                transformer.projStringTarget = csDict[targetCsComboBox.Text];
                 progressBar.Value = 0;
-                //if (worker.IsBusy != true)
-                //{
-                //  startButton.Enabled = false;
-                //  worker.RunWorkerAsync();
-                //}
-
                 startButton.Enabled = false;
 
-                foreach (int progressPercentage in transformer.Transform())
+                foreach (int progressPercentage in transformer.Transform(
+                    csDict[initialCsComboBox.Text], csDict[targetCsComboBox.Text]
+                    ))
                 {
-                    progressBar.Value = progressPercentage;
-                    progressBar.Update();
-                }
-                objectsTransformedCount = transformer.objectsCompleted;
-
-                if (objectsTransformedCount > 0)
-                {
-                    MessageBox.Show(
-                        string.Format("Преобразовано {0} объектов", objectsTransformedCount.ToString()),
-                        "",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    startButton.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show(
+                    if (progressPercentage == -1)
+                    {                    
+                        MessageBox.Show(
                         "Не найдено объектов для преобразования",
-                        "",
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    progressBar.Value = 0;
-                    startButton.Enabled = true;
+                            "",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        startButton.Enabled = true;
+                        return;
+                    }
+                    else
+                    {
+                        progressBar.Value = progressPercentage;
+                        progressBar.Update();
+                    }
                 }
 
-
+                int objectsTransformedCount = transformer.objectsCompleted;
+                MessageBox.Show(
+                    string.Format("Преобразовано {0} объектов", objectsTransformedCount.ToString()),
+                    "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                startButton.Enabled = true;
             }
             catch (FormatException)
             {
@@ -167,39 +145,12 @@ namespace AcadCsObjectsTransform
                 MessageBox.Show("Неверное значение смещения", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        void worker_DoWork(object sender, DoWorkEventArgs e)
-        {
-            worker = sender as BackgroundWorker;
-            //transformer.Transform(worker, e);
-        }
-
-        void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            if (e.Cancelled == true)
+            catch (Exception ex)
             {
-                startButton.Enabled = true;
-                MessageBox.Show("Преобразование координат завершено", "",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //return;
-            }
-            else
-            {
-                progressBar.Value = 100;
-                startButton.Enabled = true;
-                MessageBox.Show("Преобразование координат завершено", "",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //return;
+                progressBar.Value = 0;
+                MessageBox.Show(string.Format("Неопределенная ошибка приложения {0}", ex.GetType()), "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            worker = sender as BackgroundWorker;
-            progressBar.Value = e.ProgressPercentage;
-            
-        }
-
     }
 }
