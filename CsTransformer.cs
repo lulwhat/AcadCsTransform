@@ -49,15 +49,26 @@ namespace AcadCsObjectsTransform
             PromptSelectionResult psr = ed.SelectAll(filter);
             if (psr.Status != PromptStatus.OK)
             {
-               ed.WriteMessage("Не найдено ни одного объекта для преобразования\n");
                yield return -1;
             }
 
-            int selectedObjectsCount = psr.Value.Count;
+            int selectedObjectsNumber = psr.Value.Count;
 
-            // Projections info
-            //DotSpatial.Projections.ProjectionInfo crs_wgs = 
-            //    DotSpatial.Projections.ProjectionInfo.FromEpsgCode(4326);
+            // compute scaling between new and old coordinates
+            // dbt - distance between 2 points before transformation
+            // dat - distance between 2 points after transformation
+            double[] xy = new double[4] { 0, 0, 10, 10 };
+            double[] z = new double[2] { 0, 0 };
+            double dbt = Math.Sqrt(
+                Math.Pow(xy[0], 2) - Math.Pow(xy[2], 2) +
+                Math.Pow(xy[1], 2) - Math.Pow(xy[3], 2)
+                );
+            Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
+            double dat = Math.Sqrt(
+                Math.Pow(xy[0] - xy[2], 2) +
+                Math.Pow(xy[1] - xy[3], 2)
+                );
+            double scalingFactor = dat / dbt;
 
 
             List<Point2d> plPts = new List<Point2d>();
@@ -70,6 +81,7 @@ namespace AcadCsObjectsTransform
             Point3d pt1 = new Point3d();
             Point3d pt2 = new Point3d();
             double chord = new double();
+            var reprojectedXYZ = (0.0, 0.0, 0.0);
             
             foreach (SelectedObject so in psr.Value)
             {
@@ -93,7 +105,9 @@ namespace AcadCsObjectsTransform
                         plBlgs = new List<double>();
                         arcInds = new List<int>();
                         for (int i = 0; i < pl.NumberOfVertices; i++)
-                        { plPts.Add(pl.GetPoint2dAt(i)); }
+                        {
+                            plPts.Add(pl.GetPoint2dAt(i));
+                        }
 
 
                         // Collect bulges
@@ -115,9 +129,13 @@ namespace AcadCsObjectsTransform
                         // Write coordinates back to Polyline
                         for (int i = 0; i < pl.NumberOfVertices; i++)
                         {
-                            pl.SetPointAt(i, new Point2d(plPts[i].X + 10, plPts[i].Y + 10));
+                            reprojectedXYZ = reprojectPoint(plPts[i].X, plPts[i].Y, pl.Elevation);
+                            pl.SetPointAt(i, new Point2d(
+                                reprojectedXYZ.Item1, reprojectedXYZ.Item2
+                                ));
                         }
 
+                        // cases for arc parts of polyline
                         foreach (int i in arcInds)
                         {
                             if ((pl.Closed) & (i == pl.NumberOfVertices - 1))
@@ -136,7 +154,7 @@ namespace AcadCsObjectsTransform
                                 Math.Pow((pt1.Y - pt2.Y), 2)
                                 );
                             blg = Math.Tan(
-                                Math.Asin(chord / (2 * 2 * plArcs[i].Radius)) / 2
+                                Math.Asin(chord / (scalingFactor * 2 * plArcs[i].Radius)) / 2
                                 );
                             if (plArcs[i].IsClockWise)
                             {
@@ -155,7 +173,10 @@ namespace AcadCsObjectsTransform
                         foreach (ObjectId vId in pl3d)
                         {
                             PolylineVertex3d pV3d = (PolylineVertex3d)tr.GetObject(vId, OpenMode.ForWrite);
-                            pV3d.Position = new Point3d(pV3d.Position.X + 10, pV3d.Position.Y + 10, pV3d.Position.Z);
+                            reprojectedXYZ = reprojectPoint(pV3d.Position.X, pV3d.Position.Y, pV3d.Position.Z);
+                            pV3d.Position = new Point3d(
+                                reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                                );
                         }
                         objectsCompleted++;
                     }
@@ -167,7 +188,9 @@ namespace AcadCsObjectsTransform
                         foreach (ObjectId vId in pl2d)
                         {
                             Vertex2d pV2d = (Vertex2d)tr.GetObject(vId, OpenMode.ForWrite);
-                            pV2d.Position = new Point3d(pV2d.Position.X + 10, pV2d.Position.Y + 10, 0);
+                            reprojectedXYZ = reprojectPoint(pV2d.Position.X, pV2d.Position.Y, pl2d.Elevation);
+                            pV2d.Position = new Point3d(
+                                reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3);
                         }
                         objectsCompleted++;
                     }
@@ -178,48 +201,41 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId lnid = ln.Id;
                         ln = (Line)tr.GetObject(lnid, OpenMode.ForWrite);
-                        ln.StartPoint = new Point3d(ln.StartPoint.X + 10, ln.StartPoint.Y + 10, ln.StartPoint.Z);
-                        ln.EndPoint = new Point3d(ln.EndPoint.X + 10, ln.EndPoint.Y + 10, ln.EndPoint.Z);
+                        reprojectedXYZ = reprojectPoint(ln.StartPoint.X, ln.StartPoint.Y, ln.StartPoint.Z);
+                        ln.StartPoint = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
+                        reprojectedXYZ = reprojectPoint(ln.EndPoint.X, ln.EndPoint.Y, ln.EndPoint.Z);
+                        ln.EndPoint = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
                         objectsCompleted++;
                     }
-
-                    // ParameterExpression paramX = Expression.Parameter(typeof(double), "argX");
-                    // ParameterExpression paramY = Expression.Parameter(typeof(double), "argY");
-                    // ParameterExpression paramZ = Expression.Parameter(typeof(double), "argZ");
-                    // LambdaExpression lambdaExpression = Expression.Lambda(
-                    //     Expression.Add(
-                    //         paramX,
-                    //         Expression.Constant(0)
-                    //     ),
-                    //     new List<ParameterExpression>() { paramX, paramY, paramZ }
-                    // );
-                    //Func<double, double, double, double, double, double> projTransform = (double paramX, double paramY, double paramZ) => paramX, paramY, paramZ;
 
                     // Hatch - will get back later
                     Hatch ht = ent as Hatch;
                     if (ht != null)
                     {
+                        ObjectId htid = ht.Id;
                         // Vector3d v3 = new Vector3d(1,1,1);
                         // v3.
                         //ht.GetStretchPoints();
                         // ht.set
                         // ht.AppendLoop(HatchLoopTypes.External, );
-                        ObjectId htid = ht.Id;
-                        Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(10, 10, 0));
-                        Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(0, 0, 0));
-                        Matrix3d matrixRotation = Matrix3d.Rotation(
-                            30,
-                            new Vector3d(ht.Origin.X, ht.Origin.Y + 10, 0),
-                            new Point3d(ht.Origin.X, ht.Origin.Y, 0)
-                            );
-                        ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
+                        //Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(10, 10, 0));
+                        //Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(0, 0, 0));
+                        //Matrix3d matrixRotation = Matrix3d.Rotation(
+                        //    30,
+                        //    new Vector3d(ht.Origin.X, ht.Origin.Y + 10, 0),
+                        //    new Point3d(ht.Origin.X, ht.Origin.Y, 0)
+                        //    );
+
+
                         // ht.TransformBy(matrixDisplacement);
                         // ht.TransformBy(matrixScaling);
                         //ht.TransformBy(matrixRotation);
-                        objectsCompleted++;
-                        ed.WriteMessage(string.Format(
-                            "origin: {0},{1}", ht.Origin.X.ToString(), ht.Origin.Y.ToString()
-                            ));
+
+                        ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
                         Point3dCollection stretchPoints = new Point3dCollection();
                         ht.GetStretchPoints(stretchPoints);
                         IntegerCollection stretchIndices = new IntegerCollection();
@@ -227,7 +243,12 @@ namespace AcadCsObjectsTransform
                         {
                             stretchIndices.Add(i);
                         }
-                        ht.MoveStretchPointsAt(stretchIndices, new Vector3d(10,10,0));
+                        reprojectedXYZ = reprojectPoint(0, 0, ht.Elevation);
+                        ht.MoveStretchPointsAt(stretchIndices, new Vector3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            ));
+
+                        objectsCompleted++;
                     }
 
 
@@ -237,7 +258,10 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId ptid = pt.Id;
                         pt = (DBPoint)tr.GetObject(ptid, OpenMode.ForWrite);
-                        pt.Position = new Point3d(pt.Position.X + 10, pt.Position.Y + 10, pt.Position.Z);
+                        reprojectedXYZ = reprojectPoint(pt.Position.X, pt.Position.Y, pt.Position.Z);
+                        pt.Position = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
                         objectsCompleted++;
                     }
 
@@ -247,7 +271,10 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId blid = bl.Id;
                         bl = (BlockReference)tr.GetObject(blid, OpenMode.ForWrite);
-                        bl.Position = new Point3d(bl.Position.X + 10, bl.Position.Y + 10, bl.Position.Z);
+                        reprojectedXYZ = reprojectPoint(bl.Position.X, bl.Position.Y, bl.Position.Z);
+                        bl.Position = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
                         objectsCompleted++;
                     }
 
@@ -257,7 +284,10 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId txtid = txt.Id;
                         txt = (DBText)tr.GetObject(txtid, OpenMode.ForWrite);
-                        txt.Position = new Point3d(txt.Position.X + 10, txt.Position.Y + 10, txt.Position.Z);
+                        reprojectedXYZ = reprojectPoint(txt.Position.X, txt.Position.Y, txt.Position.Z);
+                        txt.Position = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
                         objectsCompleted++;
                     }
 
@@ -267,7 +297,10 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId mtxtid = mtxt.Id;
                         mtxt = (MText)tr.GetObject(mtxtid, OpenMode.ForWrite);
-                        mtxt.Location = new Point3d(mtxt.Location.X + 10, mtxt.Location.Y + 10, mtxt.Location.Z);
+                        reprojectedXYZ = reprojectPoint(mtxt.Location.X, mtxt.Location.Y, mtxt.Location.Z);
+                        mtxt.Location = new Point3d(
+                            reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                            );
                         objectsCompleted++;
                     }
 
@@ -283,14 +316,14 @@ namespace AcadCsObjectsTransform
                     // Autodesk.AutoCAD.DatabaseServices.MText;
   
                     tr.Commit();
-                    yield return objectsCompleted / selectedObjectsCount * 100;
+                    yield return objectsCompleted / selectedObjectsNumber * 100;
                 }
             }
         }
         public (double, double, double) reprojectPoint(double ptX, double ptY, double ptZ)
         {
-            double[] xy = new double[] { ptX, ptY };
-            double[] z = { ptZ };
+            double[] xy = new double[2] { ptX, ptY };
+            double[] z = new double[1] { ptZ };
 
             Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
 
