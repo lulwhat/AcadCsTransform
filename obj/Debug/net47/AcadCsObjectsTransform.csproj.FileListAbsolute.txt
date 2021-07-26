@@ -10,3 +10,15 @@ C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObj
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.pdb
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.CsForm.resources
 C:\Users\baidak\acad_py_scripts\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.GenerateResource.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net47\AcadCsObjectsTransform.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net47\AcadCsObjectsTransform.pdb
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\bin\Debug\net47\DotSpatial.Projections.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.CsForm.resources
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.GenerateResource.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.AssemblyInfoInputs.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.AssemblyInfo.cs
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.CoreCompileInputs.cache
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csproj.CopyComplete
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.dll
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.pdb
+C:\Users\lulwh\UG_work\AcadCsObjectsTransform\obj\Debug\net47\AcadCsObjectsTransform.csprojAssemblyReference.cache

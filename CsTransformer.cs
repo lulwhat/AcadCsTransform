@@ -57,18 +57,33 @@ namespace AcadCsObjectsTransform
             // compute scaling between new and old coordinates
             // dbt - distance between 2 points before transformation
             // dat - distance between 2 points after transformation
-            double[] xy = new double[4] { 0, 0, 10, 10 };
-            double[] z = new double[2] { 0, 0 };
+            double[] xy = new double[] { 0, 0, 10, 10 };
+            double[] z = new double[] { 0, 0 };
             double dbt = Math.Sqrt(
-                Math.Pow(xy[0], 2) - Math.Pow(xy[2], 2) +
-                Math.Pow(xy[1], 2) - Math.Pow(xy[3], 2)
+                Math.Pow(xy[0] - xy[2], 2) +
+                Math.Pow(xy[1] - xy[3], 2)
                 );
-            Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
+            Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 2);
             double dat = Math.Sqrt(
                 Math.Pow(xy[0] - xy[2], 2) +
                 Math.Pow(xy[1] - xy[3], 2)
                 );
             double scalingFactor = dat / dbt;
+
+            // compute new cs rotation
+            // set (10,10) point in initial cs. get it's tilt angle
+            // transform the point and get new tilt angle. then find the angles diff
+            double initCsAngleDeg = Math.Acos(10 / Math.Sqrt(200));
+            xy = new double[] { 0, 0, 10, 10 };
+            z = new double[] { 0, 0 };
+            Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 2);
+            double targetAngleDeg = Math.Acos(
+                (xy[2] - xy[0]) / Math.Sqrt(
+                    Math.Pow(xy[0] - xy[2], 2) +
+                    Math.Pow(xy[1] - xy[3], 2)
+                    )
+                );
+            double csRotation = targetAngleDeg - initCsAngleDeg;
 
 
             List<Point2d> plPts = new List<Point2d>();
@@ -136,7 +151,7 @@ namespace AcadCsObjectsTransform
                         }
 
                         // cases for arc parts of polyline
-                        foreach (int i in arcInds)
+                        /*foreach (int i in arcInds)
                         {
                             if ((pl.Closed) & (i == pl.NumberOfVertices - 1))
                             {
@@ -154,14 +169,14 @@ namespace AcadCsObjectsTransform
                                 Math.Pow((pt1.Y - pt2.Y), 2)
                                 );
                             blg = Math.Tan(
-                                Math.Asin(chord / (scalingFactor * 2 * plArcs[i].Radius)) / 2
+                                Math.Asin(chord * scalingFactor / (2 * plArcs[i].Radius)) / 2
                                 );
                             if (plArcs[i].IsClockWise)
                             {
                                 blg = -blg;
                             }
                             pl.SetBulgeAt(i, blg);
-                        }
+                        }*/
 
                         objectsCompleted++;
                     }
@@ -217,36 +232,54 @@ namespace AcadCsObjectsTransform
                     if (ht != null)
                     {
                         ObjectId htid = ht.Id;
-                        // Vector3d v3 = new Vector3d(1,1,1);
-                        // v3.
-                        //ht.GetStretchPoints();
-                        // ht.set
-                        // ht.AppendLoop(HatchLoopTypes.External, );
-                        //Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(10, 10, 0));
-                        //Matrix3d matrixScaling = Matrix3d.Scaling(0.5, new Point3d(0, 0, 0));
-                        //Matrix3d matrixRotation = Matrix3d.Rotation(
-                        //    30,
-                        //    new Vector3d(ht.Origin.X, ht.Origin.Y + 10, 0),
-                        //    new Point3d(ht.Origin.X, ht.Origin.Y, 0)
-                        //    );
-
-
-                        // ht.TransformBy(matrixDisplacement);
-                        // ht.TransformBy(matrixScaling);
-                        //ht.TransformBy(matrixRotation);
-
                         ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
-                        Point3dCollection stretchPoints = new Point3dCollection();
-                        ht.GetStretchPoints(stretchPoints);
-                        IntegerCollection stretchIndices = new IntegerCollection();
-                        for(int i = 0; i < stretchPoints.Count; i++)
-                        {
-                            stretchIndices.Add(i);
-                        }
-                        reprojectedXYZ = reprojectPoint(0, 0, ht.Elevation);
-                        ht.MoveStretchPointsAt(stretchIndices, new Vector3d(
+
+                        reprojectedXYZ = reprojectPoint(0, 0, 0);
+                        Matrix3d matrixDisplacement = Matrix3d.Displacement(new Vector3d(
                             reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
                             ));
+                        Matrix3d matrixScaling = Matrix3d.Scaling(
+                            scalingFactor,
+                            new Point3d(0, 0, ht.Elevation)
+                            );
+                        Matrix3d matrixRotation = Matrix3d.Rotation(
+                            csRotation,
+                            new Vector3d(0, 0, 1),
+                            new Point3d(0, 0, ht.Elevation)
+                            );
+                        Matrix3d htMatrix3D = new Matrix3d();
+                        htMatrix3D = matrixScaling * matrixRotation * matrixDisplacement;
+                        //for(double i = 0.0; i < htMatrix3D.ToArray().Length; i++)
+                        //{
+
+                        //}
+
+                        //ed.WriteMessage(
+                        //    "dis=" + matrixDisplacement.ToArray().ToString() + "\n" +
+                        //    "sc=" + matrixScaling.ToArray().ToString() + "\n" +
+                        //    "rot=" + matrixRotation.ToArray().ToString() + "\n" +
+                        //    "res=" + htMatrix3D.ToArray().ToString()
+                        //    );
+
+                        ht.TransformBy(matrixRotation);
+                        ht.TransformBy(matrixScaling);
+                        ht.TransformBy(matrixDisplacement);
+
+                        //ht.TransformBy(htMatrix3D);
+
+
+                        //Point3dCollection stretchPoints = new Point3dCollection();
+                        //ht.GetStretchPoints(stretchPoints);
+                        //IntegerCollection stretchIndices = new IntegerCollection();
+                        //for (int i = 0; i < stretchPoints.Count; i++)
+                        //{
+                        //    stretchIndices.Add(i);
+                        //}
+
+                        //ht.MoveStretchPointsAt(stretchIndices, new Vector3d(
+                        //    reprojectedXYZ.Item1, reprojectedXYZ.Item2, reprojectedXYZ.Item3
+                        //    ));
+
 
                         objectsCompleted++;
                     }
