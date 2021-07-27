@@ -280,9 +280,12 @@ namespace AcadCsObjectsTransform
                         ObjectId blid = bl.Id;
                         bl = (BlockReference)tr.GetObject(blid, OpenMode.ForWrite);
                         reprojectedXYZ = reprojectPoint(bl.Position.X, bl.Position.Y, bl.Position.Z);
-                        bl.Position = new Point3d(
-                            reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
-                            );
+                        Matrix3d blMatrixDisplacement = Matrix3d.Displacement(new Vector3d(
+                            reprojectedXYZ[0] - bl.Position.X,
+                            reprojectedXYZ[1] - bl.Position.Y,
+                            0
+                            ));
+                        bl.TransformBy(blMatrixDisplacement);
 
                         if (scalingFactor > 2 | scalingFactor < 0.5)
                         {
@@ -291,6 +294,11 @@ namespace AcadCsObjectsTransform
                                  new Point3d(bl.Position.X, bl.Position.Y, bl.Position.Z)
                                 );
                             bl.TransformBy(blMatrixScaling);
+                        }
+
+                        if (bl.Rotation != 0)
+                        {
+                            bl.Rotation += csRotation;
                         }
 
                         objectsCompleted++;
