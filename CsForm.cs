@@ -149,12 +149,12 @@ namespace AcadCsObjectsTransform
                 MessageBox.Show("Неверное значение смещения", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception ex)
-            {
-                progressBar.Value = 0;
-                MessageBox.Show(string.Format("Неопределенная ошибка приложения {0}", ex.GetType()), "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //catch (Exception ex)
+            //{
+            //    progressBar.Value = 0;
+            //    MessageBox.Show(string.Format("Неопределенная ошибка приложения {0}", ex.GetType()), "Ошибка",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
     }
 }
