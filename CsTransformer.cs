@@ -150,6 +150,7 @@ namespace AcadCsObjectsTransform
                                 ));
                         }
 
+                        // left arcs transformation just in case
                         // cases for arc parts of polyline
                         /*foreach (int i in arcInds)
                         {
@@ -230,7 +231,7 @@ namespace AcadCsObjectsTransform
                         objectsCompleted++;
                     }
 
-                    // Hatch - will get back later
+                    // Hatch - still doesn't move properly
                     Hatch ht = ent as Hatch;
                     if (ht != null)
                     {
@@ -356,17 +357,6 @@ namespace AcadCsObjectsTransform
                         objectsCompleted++;
                     }
 
-
-                    // Autodesk.AutoCAD.DatabaseServices.Polyline;
-                    // Autodesk.AutoCAD.DatabaseServices.Polyline3d;
-                    // Autodesk.AutoCAD.DatabaseServices.Polyline2d;
-                    // Autodesk.AutoCAD.DatabaseServices.Line;
-                    // Autodesk.AutoCAD.DatabaseServices.Hatch;
-                    // Autodesk.AutoCAD.DatabaseServices.DBPoint;
-                    // Autodesk.AutoCAD.DatabaseServices.BlockReference;
-                    // Autodesk.AutoCAD.DatabaseServices.DBText;
-                    // Autodesk.AutoCAD.DatabaseServices.MText;
-  
                     tr.Commit();
                     yield return objectsCompleted / selectedObjectsNumber * 100;
                 }
@@ -376,14 +366,14 @@ namespace AcadCsObjectsTransform
         {
             double[] xy = new double[2] { ptX, ptY };
             double[] z = new double[1] { ptZ };
-            List<double> reprojectedPtList = new List<double>();
+            List<double> reprojectedPtXYZ = new List<double>();
 
             Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
 
-            reprojectedPtList.Add(xy[0]);
-            reprojectedPtList.Add(xy[1]);
-            reprojectedPtList.Add(z[0]);
-            return reprojectedPtList;
+            reprojectedPtXYZ.Add(xy[0]);
+            reprojectedPtXYZ.Add(xy[1]);
+            reprojectedPtXYZ.Add(z[0]);
+            return reprojectedPtXYZ;
         }
     }
 }
