@@ -117,6 +117,12 @@ namespace AcadCsObjectsTransform
                 transformer.crsInitial = ProjectionInfo.FromProj4String(csDict[initialCsComboBox.Text]);
                 transformer.crsTarget = ProjectionInfo.FromProj4String(csDict[targetCsComboBox.Text]);
 
+                // offsets
+                transformer.initialXOffset = initialXOffsetValue;
+                transformer.initialYOffset = initialYOffsetValue;
+                transformer.targetXOffset = targetXOffsetValue;
+                transformer.targetYOffset = targetYOffsetValue;
+
                 // transform objects and update progress bar
                 foreach (int progressPercentage in transformer.Transform())
                 {
@@ -149,12 +155,12 @@ namespace AcadCsObjectsTransform
                 MessageBox.Show("Неверное значение смещения", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //catch (Exception ex)
-            //{
-            //    progressBar.Value = 0;
-            //    MessageBox.Show(string.Format("Неопределенная ошибка приложения {0}", ex.GetType()), "Ошибка",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            catch (Exception ex)
+            {
+                progressBar.Value = 0;
+                MessageBox.Show(string.Format("Неопределенная ошибка приложения {0}", ex.GetType()), "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

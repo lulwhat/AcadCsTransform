@@ -21,6 +21,10 @@ namespace AcadCsObjectsTransform
         public int objectsCompleted = 0;
         public ProjectionInfo crsInitial;
         public ProjectionInfo crsTarget;
+        public double initialXOffset;
+        public double initialYOffset;
+        public double targetXOffset;
+        public double targetYOffset;
 
         public IEnumerable<int> Transform()
         {
@@ -144,7 +148,11 @@ namespace AcadCsObjectsTransform
                         // Write coordinates back to Polyline
                         for (int i = 0; i < pl.NumberOfVertices; i++)
                         {
-                            reprojectedXYZ = reprojectPoint(plPts[i].X, plPts[i].Y, pl.Elevation);
+                            reprojectedXYZ = reprojectPoint(
+                                plPts[i].X + initialXOffset,
+                                plPts[i].Y + initialYOffset,
+                                pl.Elevation
+                                );
                             pl.SetPointAt(i, new Point2d(
                                 reprojectedXYZ[0], reprojectedXYZ[1]
                                 ));
@@ -189,7 +197,11 @@ namespace AcadCsObjectsTransform
                         foreach (ObjectId vId in pl3d)
                         {
                             PolylineVertex3d pV3d = (PolylineVertex3d)tr.GetObject(vId, OpenMode.ForWrite);
-                            reprojectedXYZ = reprojectPoint(pV3d.Position.X, pV3d.Position.Y, pV3d.Position.Z);
+                            reprojectedXYZ = reprojectPoint(
+                                pV3d.Position.X + initialXOffset,
+                                pV3d.Position.Y + initialYOffset,
+                                pV3d.Position.Z
+                                );
                             pV3d.Position = new Point3d(
                                 reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                                 );
@@ -205,7 +217,11 @@ namespace AcadCsObjectsTransform
                         foreach (ObjectId vId in pl2d)
                         {
                             Vertex2d pV2d = (Vertex2d)tr.GetObject(vId, OpenMode.ForWrite);
-                            reprojectedXYZ = reprojectPoint(pV2d.Position.X, pV2d.Position.Y, pl2d.Elevation);
+                            reprojectedXYZ = reprojectPoint(
+                                pV2d.Position.X + initialXOffset,
+                                pV2d.Position.Y + initialYOffset,
+                                pl2d.Elevation
+                                );
                             pV2d.Position = new Point3d(
                                 reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]);
                         }
@@ -219,11 +235,19 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId lnid = ln.Id;
                         ln = (Line)tr.GetObject(lnid, OpenMode.ForWrite);
-                        reprojectedXYZ = reprojectPoint(ln.StartPoint.X, ln.StartPoint.Y, ln.StartPoint.Z);
+                        reprojectedXYZ = reprojectPoint(
+                            ln.StartPoint.X + initialXOffset,
+                            ln.StartPoint.Y + initialYOffset,
+                            ln.StartPoint.Z
+                            );
                         ln.StartPoint = new Point3d(
                             reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                             );
-                        reprojectedXYZ = reprojectPoint(ln.EndPoint.X, ln.EndPoint.Y, ln.EndPoint.Z);
+                        reprojectedXYZ = reprojectPoint(
+                            ln.EndPoint.X + initialXOffset,
+                            ln.EndPoint.Y + initialYOffset,
+                            ln.EndPoint.Z
+                            );
                         ln.EndPoint = new Point3d(
                             reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                             );
@@ -238,18 +262,33 @@ namespace AcadCsObjectsTransform
                         ObjectId htid = ht.Id;
                         ht = (Hatch)tr.GetObject(htid, OpenMode.ForWrite);
 
-                        reprojectedXYZ = reprojectPoint(0, 0, 0);
+                        try
+                        {
+                            ht.Origin = new Point2d(
+                                ht.Bounds.Value.MinPoint.X,
+                                ht.Bounds.Value.MinPoint.Y
+                                );
+                        }
+                        catch { }
+
+                        reprojectedXYZ = reprojectPoint(
+                            ht.Origin.X + initialXOffset,
+                            ht.Origin.Y + initialYOffset,
+                            0.0
+                            );
                         Matrix3d htMatrixDisplacement = Matrix3d.Displacement(new Vector3d(
-                            reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
+                            reprojectedXYZ[0] - ht.Origin.X,
+                            reprojectedXYZ[1] - ht.Origin.Y,
+                            reprojectedXYZ[2]
                             ));
                         Matrix3d htMatrixScaling = Matrix3d.Scaling(
                             scalingFactor,
-                            new Point3d(0, 0, ht.Elevation)
+                            new Point3d(ht.Origin.X, ht.Origin.Y, ht.Elevation)
                             );
                         Matrix3d htMatrixRotation = Matrix3d.Rotation(
                             csRotation,
                             new Vector3d(0, 0, 1),
-                            new Point3d(0, 0, ht.Elevation)
+                            new Point3d(ht.Origin.X, ht.Origin.Y, ht.Elevation)
                             );
 
                         ht.TransformBy(htMatrixRotation);
@@ -266,7 +305,11 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId ptid = pt.Id;
                         pt = (DBPoint)tr.GetObject(ptid, OpenMode.ForWrite);
-                        reprojectedXYZ = reprojectPoint(pt.Position.X, pt.Position.Y, pt.Position.Z);
+                        reprojectedXYZ = reprojectPoint(
+                            pt.Position.X + initialXOffset,
+                            pt.Position.Y + initialYOffset,
+                            pt.Position.Z
+                            );
                         pt.Position = new Point3d(
                             reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                             );
@@ -280,8 +323,15 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId blid = bl.Id;
                         bl = (BlockReference)tr.GetObject(blid, OpenMode.ForWrite);
+                        Matrix3d blMatrixDisplacement;
+                        blMatrixDisplacement = Matrix3d.Displacement(new Vector3d(
+                            initialXOffset,
+                            initialYOffset,
+                            0
+                            ));
+                        bl.TransformBy(blMatrixDisplacement);
                         reprojectedXYZ = reprojectPoint(bl.Position.X, bl.Position.Y, bl.Position.Z);
-                        Matrix3d blMatrixDisplacement = Matrix3d.Displacement(new Vector3d(
+                        blMatrixDisplacement = Matrix3d.Displacement(new Vector3d(
                             reprojectedXYZ[0] - bl.Position.X,
                             reprojectedXYZ[1] - bl.Position.Y,
                             0
@@ -311,7 +361,11 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId txtid = txt.Id;
                         txt = (DBText)tr.GetObject(txtid, OpenMode.ForWrite);
-                        reprojectedXYZ = reprojectPoint(txt.Position.X, txt.Position.Y, txt.Position.Z);
+                        reprojectedXYZ = reprojectPoint(
+                            txt.Position.X + initialXOffset,
+                            txt.Position.Y + initialYOffset,
+                            txt.Position.Z
+                            );
                         txt.Position = new Point3d(
                             reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                             );
@@ -335,7 +389,11 @@ namespace AcadCsObjectsTransform
                     {
                         ObjectId mtxtid = mtxt.Id;
                         mtxt = (MText)tr.GetObject(mtxtid, OpenMode.ForWrite);
-                        reprojectedXYZ = reprojectPoint(mtxt.Location.X, mtxt.Location.Y, mtxt.Location.Z);
+                        reprojectedXYZ = reprojectPoint(
+                            mtxt.Location.X + initialXOffset,
+                            mtxt.Location.Y + initialYOffset,
+                            mtxt.Location.Z
+                            );
                         mtxt.Location = new Point3d(
                             reprojectedXYZ[0], reprojectedXYZ[1], reprojectedXYZ[2]
                             );
@@ -370,8 +428,8 @@ namespace AcadCsObjectsTransform
 
             Reproject.ReprojectPoints(xy, z, crsInitial, crsTarget, 0, 1);
 
-            reprojectedPtXYZ.Add(xy[0]);
-            reprojectedPtXYZ.Add(xy[1]);
+            reprojectedPtXYZ.Add(xy[0] + targetXOffset);
+            reprojectedPtXYZ.Add(xy[1] + targetYOffset);
             reprojectedPtXYZ.Add(z[0]);
             return reprojectedPtXYZ;
         }
